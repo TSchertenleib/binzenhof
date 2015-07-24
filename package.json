@@ -1,0 +1,21 @@
+{
+  "name": "secure",
+  "version": "1.0.0",
+  "description": "a view of the ways of doing security in the internet",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webcam"
+  ],
+  "author": "Florian Wachter",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.0.0",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

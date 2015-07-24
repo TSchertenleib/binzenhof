@@ -1,0 +1,127 @@
+/* CSS Document */
+
+
+*	{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body	{
+	
+	background: white;
+	font-family: 'source sans pro', 'Helvetica', sans-serif;	font-style: normal;
+	font-weight: 300;
+
+
+}
+
+
+
+/* Navigation --------------------------------- */
+
+
+
+#navibackground {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100px;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.31) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.31)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.31) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.31) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.31) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.31) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+
+#logo{
+	font-family: 'source serif pro';
+	font-size: 18px;
+	width: 58%;
+	text-align: center;
+	float: left;
+	display:block;
+	letter-spacing: 1px;
+
+}
+
+#navigation	{
+	width: 42%;
+	float:right;
+	display:block;
+}
+
+
+nav a {
+	text-decoration:none;
+	color: white;
+	padding-left: 50px;
+	font-size: 14;           
+}
+
+
+ul {
+	list-style: none;
+	padding-left:0;
+	padding-top: 20px;
+	padding-right: 50px;
+	position: static;	
+}
+
+
+.unterliste>li	{
+	float:right;
+}
+
+
+/* Main --------------------------------- */
+
+.bgimage {
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: 100%; height: 100%; z-index: -100;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.button {
+	letter-spacing: 2px;
+	font-size: 2.5vw;
+	background-color:transparent;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid white;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-weight:200;
+	padding:12px 27px;
+	text-decoration:none;
+}
+
+
+.button-wrapper {
+	margin-top: 30%;
+	width: 100%;
+	text-align: center;
+}
+
+/* Main Navigation --------------------------------- */
+
+.main-navigation {
+	display: flex;
+	padding-top: 1023px;
+}
+
+.nav-container img {
+	float: left;
+	width:50%;
+}
