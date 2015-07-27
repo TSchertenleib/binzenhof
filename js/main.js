@@ -15,8 +15,6 @@ setInterval(function() {
     }
 }, 250);
 
-
-
 function hasScrolled() {
     var st = $(this).scrollTop();
     
@@ -39,8 +37,23 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
+// Hide Button on scrol down
+var myWindow = $(window);
+var myPos = myWindow.scrollTop();
 
+myWindow.scroll(function() {
+    if(myWindow.scrollTop() > myPos && myWindow.scrollTop() > 300)
+    {
+        $('.button').fadeOut('slow');  
+    }
+    else
+    {
+        $('.button').fadeIn('slow');
+    }
+    myPos = myWindow.scrollTop();
+ });
 
+// simple jQuery functions
 
 $(document).ready(function ()	{
 
@@ -59,6 +72,7 @@ $(document).ready(function ()	{
 
     });
 
+    // scroll to position
     $('.button').click(function() {
 
         $.fn.scrollView = function () {
@@ -71,11 +85,15 @@ $(document).ready(function ()	{
         $('.main-navigation').scrollView();
     });
 
-$('.button').blurjs({
-    source: 'body',
-    radius: 10
-});
+    // blur background of an element
+    $('.button').blurjs({
+        source: 'body',
+        radius: 10
+    });
 
 
 });
+
+
+
 

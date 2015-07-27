@@ -47,6 +47,8 @@ header {
   top: -100px; 
 }
 
+
+
 #navibackground {
 	margin-left: auto;
 	margin-right: auto;
@@ -74,7 +76,7 @@ header {
 
 }
 
-#navigation	{
+#start-navigation	{
 	width: 43%;
 	float:left;
 	display:block;
