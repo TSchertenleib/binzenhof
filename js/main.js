@@ -24,7 +24,7 @@ function hasScrolled() {
     
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight && st > 250){
+    if (st > lastScrollTop && st > navbarHeight && st > 200){
         // Scroll Down
         $('header').removeClass('nav-down').addClass('nav-up');
     } else {
@@ -37,14 +37,14 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
-// Hide Button on scrol down
+// Hide Button on scroll down
 var myWindow = $(window);
 var myPos = myWindow.scrollTop();
 
 myWindow.scroll(function() {
-    if(myWindow.scrollTop() > myPos && myWindow.scrollTop() > 350)
+    if(myWindow.scrollTop() > myPos && myWindow.scrollTop() > 300)
     {
-        $('.button').fadeOut('slow');  
+        $('.button').fadeOut('fast');  
     }
     else
     {
