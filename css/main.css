@@ -144,7 +144,6 @@ ul {
 }
 
 .bgimage {	
-	transform: scale(1.01);
 	position: relative; 
 	width: 100%; 
 	height: 100%; 
@@ -153,9 +152,8 @@ ul {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	margin-bottom: -4px; /* übergangslösung */
 
-
+	transform: scale(1.01);
 }
 
 .bgimage img {
