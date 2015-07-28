@@ -60,9 +60,9 @@ var myPos = myWindow.scrollTop();
 
 myWindow.scroll(function() {
     if(myWindow.scrollTop() > myPos && myWindow.scrollTop() > scrollOut/2) {
-        $('.button').fadeOut('fast');  
+        $('.button').stop(true, false).fadeOut('fast');  
     } else {
-        $('.button').fadeIn('slow');
+        $('.button').stop(true, false).fadeIn('slow');
     }
     myPos = myWindow.scrollTop();
 });
@@ -77,12 +77,12 @@ $(".uebertitel").css("display","none");
 $('.button').hover(function() {
     $('.inhalt').addClass('start-effect');
     $('.bgimage').addClass('img-zoom');
-    $('.uebertitel').fadeIn('slow');
+    $('.uebertitel').stop(true, false).fadeIn('slow');
 
 }, function() {
     $('.inhalt').removeClass('start-effect');
     $('.bgimage').removeClass('img-zoom');
-    $('.uebertitel').fadeOut('fast');
+    $('.uebertitel').stop(true, false).fadeOut('fast');
 
 });
 
