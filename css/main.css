@@ -268,18 +268,15 @@ ul {
 /* Unterseiten Main --------------------------------- */
 
 .inhalt-unterseiten {
-	display:-webkit-flex;
-	display:flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
+
 }
 
 .ueberbild {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	box-shadow: 
-	-webkit-flex:1;
+
+
 
 	-moz-transition:all 0.8s ease-in-out;
 	-webkit-transition:all 0.8s ease-in-out;
@@ -294,7 +291,7 @@ ul {
 
 
 .text {
-	-webkit-flex:1;
+
 	width: 100%;
 	padding: 2vw 10vw;
 
@@ -322,11 +319,27 @@ ul {
 	-webkit-column-rule: 0px choose #000000;
 	text-align: left;
 
-
-
 }
 
+.unser-bauernhof-untermenu {
+	min-width: 100%;
+	display:-webkit-flex;
+	display:flex;
+}
+
+.felx-container-bh-nav {
+	-webkit-flex:1;	
+}
+
+.unser-bauernhof-untermenu img {
+	width: 100%;
+}
+
+
+
 /* Main Navigation --------------------------------- */
+
+
 
 .main-navigation {
 	margin-top: -5px; /* vorübergehend */
@@ -336,8 +349,6 @@ ul {
 	min-width: 100%;
 	display:-webkit-flex;
 	display:flex;
-
-
 }
 
 .flex-container1 {
