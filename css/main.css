@@ -273,34 +273,27 @@ ul {
 	position: relative;
 	width: 100%;
 	height: 100%;
-
-
-
 	-moz-transition:all 0.8s ease-in-out;
 	-webkit-transition:all 0.8s ease-in-out;
 	-o-transition:all 0.8s ease-in-out;
 	-ms-transition:all 0.8s ease-in-out;
 	transition:all 0.8s ease-in-out;
-
-
-
 	opacity: 1;
 }
 
 
 .text {
-
 	width: 100%;
-	padding: 2vw 10vw;
-
+	padding: 1vw 10vw;
 }
 
-.uebertext-titel {
+.uebertext-titel h1 {
+	padding-bottom: 1vw;
 	width: 100%;
-	font-weight: 300;
-	font-size: 1.5vw;
+	font-weight: 400;
+	font-size: 2.6vw;
+	line-height: 2.8vw;
 	color: #9E9E9E;
-	line-height: 45px;
 }
 
 .uebertext>p {
@@ -318,24 +311,48 @@ ul {
 	text-align: left;
 }
 
-/*.unser-bauernhof-untermenu {
+.unser-bauernhof-untermenu {
 	min-width: 100%;
+	display:-webkit-flex;
+	display:flex;
+	flex-direction: column;
+}
+
+.felx-container-bh-nav {
+	flex-direction: row;
 	display:-webkit-flex;
 	display:flex;
 }
 
-.felx-container-bh-nav {
-	-webkit-flex:1;	
-}
-
 .unser-bauernhof-untermenu img {
-	float: left;
 	width: 100%;
 	height: 100%;
-}*/
+	float: left;
+	display:-webkit-flex;
+	display:flex;
+}
 
 
+/* Zitat --------------------------------- */
 
+.zitat {
+	padding: 2vw 10vw;
+	text-align: center;
+	color: #9E9E9E;
+}
+
+.zitat h1 {
+	font-weight: 400;
+	font-style: italic;
+	font-size: 2.6vw;
+	line-height: 2.8vw;
+}
+
+.zitat h6 {
+	font-weight: 400;
+	font-size: 1.1vw;
+	line-height: 1.3vw;
+}
 
 /* Main Navigation --------------------------------- */
 
