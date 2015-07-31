@@ -70,6 +70,13 @@ myWindow.scroll(function() {
 
 // simple jQuery functions
 
+$('.portraits-container').hover(function() {
+    $('.name').addClass('zoom');
+    $('.angaben').addClass('zoom');
+}, function() {
+    $('.name').removeClass('zoom');
+    $('.angaben').removeClass('zoom');
+});
 
 $(".uebertitel").css("display","none");
 

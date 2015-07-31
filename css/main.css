@@ -39,7 +39,7 @@ header {
 /* Startseite Navigation --------------------------------- */
 
 header {
-    height: 100;
+    height: 100px;
     top: 0;
     transition: top 0.5s ease-in-out;
 }
@@ -172,7 +172,6 @@ ul {
 	-o-transition:all 0.8s ease-in-out;
 	-ms-transition:all 0.8s ease-in-out;
 	transition:all 0.8s ease-in-out;
-
 	transform: scale(1.01);
 }
 
@@ -197,7 +196,6 @@ ul {
 }
 
 .img-zoom{
-
 	-moz-transform: scale(1.01);
 	-webkit-transform: scale(1.01);
 	-o-transform: scale(1.01);
@@ -268,7 +266,8 @@ ul {
 /* Unterseiten Main --------------------------------- */
 
 .abstand-oben {
-
+	width:100%;
+	height: 100px;
 }
 
 
@@ -312,7 +311,11 @@ ul {
 	-webkit-column-gap: 8vw;
 	-webkit-column-rule: 0px choose #000000;
 	text-align: left;
+	font-size: 1.3vw;
+	line-height: 1.6vw;
 }
+
+/* Unser-Bauernhof Untermenu --------------------------------- */
 
 .unser-bauernhof-untermenu {
 	min-width: 100%;
@@ -333,6 +336,89 @@ ul {
 	float: left;
 	display:-webkit-flex;
 	display:flex;
+}
+
+/* Über uns Portraits Sektion --------------------------------- */
+
+.portraits {
+
+}
+
+.portraits-container {
+	display:-webkit-flex;
+	display:flex;
+	flex-direction: row;
+}
+
+.img-container{
+	display:-webkit-flex;
+	display:flex;
+	width:50%;
+}
+
+.img-container img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.angaben-container {
+	display:-webkit-flex;
+	display:flex;
+
+	background: #EEEEEE;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	width: 50%;
+}
+
+.angaben-container h2 {
+	font-weight: 400;
+	font-size: 2.4vw;
+	line-height: 2.8vw;
+	color: #9E9E9E;
+	text-align: center;
+
+	position:absolute; 
+	width: 100%;
+	margin-top: 25%;
+	transition: all 0.8s ease-in-out;
+	visibility: visible;
+	opacity: 0;
+}
+
+.angaben-container p {
+	display: block;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	font-size: 1.1vw;
+	line-height: 2vw;
+
+	position:absolute; 
+	width: 100%;
+	margin-top: 30%;
+	transition: all 0.8s ease-in-out;
+
+	visibility: visible;
+	opacity: 0;
+}
+
+
+
+/* Über uns transitions --------------------------------- */
+
+.portraits-container:hover .zoom {
+	visibility: visible;
+	opacity: 1;
+	-moz-transition:all 0.8s ease-in-out;
+	-webkit-transition:all 0.8s ease-in-out;
+	-o-transition:all 0.8s ease-in-out;
+	-ms-transition:all 0.8s ease-in-out;
+	transition:all 0.8s ease-in-out;
+	transform: scale(1.2);
 }
 
 
