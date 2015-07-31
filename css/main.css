@@ -292,7 +292,7 @@ ul {
 
 .text {
 	width: 100%;
-	padding: 2vw 10vw;
+	padding: 2vw 10vw 1vw;
 }
 
 .uebertext-titel h1 {
@@ -306,7 +306,10 @@ ul {
 
 .uebertext>p {
 	width: 100%;
-	padding-bottom: 2vw;
+	padding-bottom: 1vw;
+	text-align: left;
+	font-size: 1.3vw;
+	line-height: 1.6vw;
 	column-count: 2;
 	column-gap: 8vw;
 	column-rule: 0px choose #000000;
@@ -322,9 +325,14 @@ ul {
 	-ms-column-count: 2;
 	-ms-column-gap: 8vw;
 	-ms-column-rule: 0px choose #000000;
+}
+
+.kontakt-text>p {
+	width: 50%;
+	padding-bottom: 1vw;
 	text-align: left;
 	font-size: 1.3vw;
-	line-height: 1.6vw;
+	line-height: 1.6vw;	
 }
 
 /* Unser-Bauernhof Untermenu --------------------------------- */
@@ -482,11 +490,11 @@ ul {
 	transform: scale(1.03);
 }
 
-/* Events --------------------------------- */
+/* Anfragen -> Events & Hoflaedeli --------------------------------- */
 
 
 .anfragen {
-	padding: 2vw 10vw 8vw;
+	padding: 6vw 10vw 8vw;
 	text-align: center;
 }
 
@@ -509,6 +517,34 @@ ul {
 	line-height: 2.8vw;
 	text-decoration: none;
 }
+
+
+/* Hoflädeli --------------------------------- */
+
+.text h3 {
+	font-size: 2vw;
+	font-weight: 300;	
+}
+
+.grau-container {
+	width:100%;
+	background: #EEEEEE;
+}
+
+.oeffnungszeiten {
+	padding: 1vw 31vw 4vw;
+}
+
+.oeffnungszeiten p {
+	text-align: center;
+	width: 100%;
+	font-size: 1.3vw;
+	line-height: 2vw;
+
+}
+
+/* Kontakt Map --------------------------------- */
+
 
 /* Zitat --------------------------------- */
 
