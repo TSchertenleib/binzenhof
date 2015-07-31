@@ -100,7 +100,38 @@ $('.button').hover(function() {
     });
 
 
-});
+
+
+    // google maps integration
+
+
+
+    function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(47.378237, 8.0470636),
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions)
+      var myIcon='https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-128.png';
+      var marker = new google.maps.Marker({ position: {lat:47.378237, lng:8.0470636}, map: map, icon: myIcon, optimized:false });
+
+
+     // I create an OverlayView, and set it to add the "markerLayer" class to the markerLayer DIV
+     var myoverlay = new google.maps.OverlayView();
+     myoverlay.draw = function () {
+       this.getPanes().markerLayer.id='markerLayer';
+   };
+   myoverlay.setMap(map);
+
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+
+
     // blur background of an element
     // $('.button').blurjs({
     //     source: '.bg',
@@ -111,8 +142,6 @@ $('.button').hover(function() {
     // },
     // });
 
-
-
-
+});
 
 
