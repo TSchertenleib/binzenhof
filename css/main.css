@@ -485,7 +485,30 @@ ul {
 /* Events --------------------------------- */
 
 
+.anfragen {
+	padding: 2vw 10vw 8vw;
+	text-align: center;
+}
 
+.anfragen h3 {
+	font-weight: 300;
+}
+
+.anfragen a {
+	color: #9E9E9E;
+	font-weight: 600;
+	font-size: 2.8vw;
+	line-height: 2.8vw;
+	text-decoration: none;
+}
+
+.anfragen a:hover {
+	color: #000000;
+	font-weight: 600;
+	font-size: 2.8vw;
+	line-height: 2.8vw;
+	text-decoration: none;
+}
 
 /* Zitat --------------------------------- */
 
