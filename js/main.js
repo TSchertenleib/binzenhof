@@ -128,7 +128,7 @@ $('.button').hover(function() {
      myoverlay.draw = function () {
          this.getPanes().markerLayer.id='markerLayer';
      };
-     myoverlay.setMap(map);
+     // myoverlay.setMap(map);
 
  }
  google.maps.event.addDomListener(window, 'load', initialize);
