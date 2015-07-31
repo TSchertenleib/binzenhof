@@ -99,6 +99,8 @@ $('.button').hover(function() {
         $('.main-navigation').scrollView();
     });
 
+
+});
     // blur background of an element
     // $('.button').blurjs({
     //     source: '.bg',
@@ -110,8 +112,6 @@ $('.button').hover(function() {
     // });
 
 
-
-});
 
 
 
