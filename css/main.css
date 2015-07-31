@@ -544,16 +544,18 @@ ul {
 }
 
 /* Kontakt Map --------------------------------- */
-      #map-canvas {
-        width: 100%;
-        height: 42.5vw;  /* (bildgrösse/4 *3) */
+ 
+#map-canvas {
+	width: 100%;
+	height: 42.5vw;  /* (bildgrösse/4 *3) */
 
-      }
+}
 
-      #markerLayer img {
-        width: 100% !important;
-        height: 100% !important;
-      }
+/*#markerLayer img {
+	width: 100% !important;
+	height: 100% !important;
+}
+*/
 
 /* Zitat --------------------------------- */
 

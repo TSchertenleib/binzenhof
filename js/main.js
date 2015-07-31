@@ -111,22 +111,27 @@ $('.button').hover(function() {
         var mapOptions = {
           center: new google.maps.LatLng(47.378237, 8.0470636),
           zoom: 18,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          mapTypeId: google.maps.MapTypeId.HYBRID 
+          //ROADMAP HYBRID TERRAIN SATELLITE
       }
-      var map = new google.maps.Map(mapCanvas, mapOptions)
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
       var myIcon='https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-128.png';
       var marker = new google.maps.Marker({ position: {lat:47.378237, lng:8.0470636}, map: map, icon: myIcon, optimized:false });
 
-
+      // var marker = new google.maps.Marker({
+      //   map: map,position: new google.maps.LatLng(47.378237, 8.047063600000001)});
+ 
      // I create an OverlayView, and set it to add the "markerLayer" class to the markerLayer DIV
-     var myoverlay = new google.maps.OverlayView();
+     // var myoverlay = new google.maps.OverlayView();
+ 
      myoverlay.draw = function () {
-       this.getPanes().markerLayer.id='markerLayer';
-   };
-   myoverlay.setMap(map);
+         this.getPanes().markerLayer.id='markerLayer';
+     };
+     myoverlay.setMap(map);
 
-}
-google.maps.event.addDomListener(window, 'load', initialize);
+ }
+ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
