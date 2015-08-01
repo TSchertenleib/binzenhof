@@ -111,7 +111,7 @@ $('.button').hover(function() {
         var mapOptions = {
           center: new google.maps.LatLng(47.378237, 8.0470636),
           zoom: 18,
-          mapTypeId: google.maps.MapTypeId.HYBRID 
+          mapTypeId: google.maps.MapTypeId.ROADMAP 
           //ROADMAP HYBRID TERRAIN SATELLITE
       }
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -134,7 +134,9 @@ $('.button').hover(function() {
  google.maps.event.addDomListener(window, 'load', initialize);
 
 
+ // slider
 
+ 
 
 
     // blur background of an element

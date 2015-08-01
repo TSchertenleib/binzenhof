@@ -576,37 +576,110 @@ ul {
 
 }
 
-.grau-container-kontakt {
-	position: relative;
-	padding: 3vw;
+
+
+.grau-container-kontakt {  
+	position: static;
+	padding: 2vw 0vw 5vw; /*wieso??*/
 	width:100%;
 	height: 100%;
 	background: #EEEEEE;
 }
 
-.pure-form input {
-	height: 3vw;
-}
-
-.pure-form textarea {
-	height: 12vw;
-}
-
-.pure-form button {
-	height: 3vw;
-	background: #4A89DC;
-	border: 1px solid rgba(121,125,128,0.30);
-	box-shadow: 0px 1px 5px 0px rgba(171,175,179,0.60), inset 0px -2px 2px 0px rgba(121,125,128,0.20);
-	border-radius: 3px;
-}
-
-.pure-form:active {
-	border-color: #4A89DC; 
-}
 
 .adresse {
 	width: 100%;
 	font-size: 1.3vw;
+	padding-right: 7vw;
+}
+
+
+
+/* Form --------------------------------- */
+
+
+
+.form-style-6{
+	font-size: 1.3vw;
+	width: 60%;
+	float: left;
+/*	margin: 2vw auto;
+*/	padding: 0vw 3vw 0vw 7vw;
+/*	background: #F7F7F7;
+*/	border-radius: 3px;
+
+}
+
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 1vw;
+	border: 1px solid #ccc;
+	padding: 1vw;
+	color: #555;
+	border-radius: 3px;
+}
+
+
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus{
+	box-shadow: 0 0 0.1vw #4A89FF;
+	padding: 1vw;
+
+}
+
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 1vw;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;    
+	color: #fff;
+
+	/* Rectangle 65: */
+	background: #4A89DC;
+	border: 1px solid rgba(121,125,128,0.30);
+	border-radius: 3px;
+	box-shadow: 0px 1px 5px 0px rgba(171,175,179,0.60), 
+	inset 0px -2px 2px 0px rgba(121,125,128,0.20);
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+	background: #4A89FF;
+}
+
+textarea {
+	height: 10vw;
 }
 
 /*.kontakt-flex-uebercontainer {
@@ -627,287 +700,285 @@ ul {
 	display:flex;
 	-webkit-flex:3;
 
-}*/
+	}*/
 
-/* Zitat --------------------------------- */
+	/* Zitat --------------------------------- */
 
-.zitat {
-	padding: 2vw 10vw 0.3vw;
-	text-align: center;
-	color: #9E9E9E;
+	.zitat {
+		padding: 2vw 10vw 0.3vw;
+		text-align: center;
+		color: #9E9E9E;
 
-}
+	}
 
-.zitat h1 {
-	font-weight: 400;
-	font-style: italic;
-	font-size: 2.6vw;
-	line-height: 2.8vw;
+	.zitat h1 {
+		font-weight: 400;
+		font-style: italic;
+		font-size: 2.6vw;
+		line-height: 2.8vw;
 
-}
+	}
 
-.zitat h6 {
-	font-weight: 400;
-	font-size: 1.1vw;
-	line-height: 1.3vw;
-	margin-top: 0vw;
-}
+	.zitat h6 {
+		font-weight: 400;
+		font-size: 1.1vw;
+		line-height: 1.3vw;
+		margin-top: 0vw;
+	}
 
-/* Main Navigation --------------------------------- */
-
-
-
-.main-navigation {
-	margin-top: -5px; /* vorübergehend */
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	display:-webkit-flex;
-	display:flex;
-
-}
-
-.nav-container {
-	min-width: 100%;
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	display:-webkit-flex;
-	display:flex;
-	flex-direction: column;
-}
-
-.flex-container1 {
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	flex-direction: row;
-	display:-webkit-flex;
-	display:flex;
-
-}
-
-.flex-container2 {
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	flex-direction: row;
-	display:-webkit-flex;
-	display:flex;
-
-}
-
-.nav-container img {
-	width: 100%;
-	height: 100%;
-	float: left;
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	display:-webkit-flex;
-	display:flex;
-
-}
-
-.view {
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-	cursor: default;
-	width: 100%;
-
-}
+	/* Main Navigation --------------------------------- */
 
 
 
-.effect .mask {
-	position:absolute; /* Center the mask */
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	cursor:pointer;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.75);
-	opacity:1;
-	visibility:visible;
-	-moz-transition:all 0.8s ease-in-out;
-	-webkit-transition:all 0.8s ease-in-out;
-	-o-transition:all 0.8s ease-in-out;
-	-ms-transition:all 0.8s ease-in-out;
-	transition:all 0.8s ease-in-out;
-}
+	.main-navigation {
+		margin-top: -5px; /* vorübergehend */
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:flex;
 
-.effect:hover .mask {
-	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.75);
-	visibility:hidden;
-}
+	}
 
-.effect img {
-	transition: all 0.8s ease-in-out;
-	-moz-transition: all 0.8s ease-in-out;
-	-webkit-transition: all 0.8s ease-in-out;
-	-o-transition: all 0.8s ease-in-out;
-	-ms-transition: all 0.8s ease-in-out;
-	
-}
+	.nav-container {
+		min-width: 100%;
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:flex;
+		flex-direction: column;
+	}
 
-.effect:hover img {
-	transform: scale(1.02);
-	-moz-transform: scale(1.02);
-	-webkit-transform: scale(1.02);
-	-o-transform: scale(1.02);
-	-ms-transform: scale(1.02);
-}
+	.flex-container1 {
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		flex-direction: row;
+		display:-webkit-flex;
+		display:flex;
 
-.navigation-title {
-	z-index: 1000;
-	color: white;
-	position:absolute; 
-	width: 100%;
-	margin-top: 33%;
-	font-weight: 400;
-	font-size: 2.5vw;
-	transition: all 0.8s ease-in-out;
-	-moz-transition: all 0.8s ease-in-out;
-	-webkit-transition: all 0.8s ease-in-out;
-	-o-transition: all 0.8s ease-in-out;
-	-ms-transition: all 0.8s ease-in-out;
-}
+	}
 
-.effect:hover .navigation-title {
-	transform: scale(0.98);
-	-moz-transform: scale(0.98);
-	-webkit-transform: scale(0.98);
-	-o-transform: scale(0.98);
-	-ms-transform: scale(0.98);
-}
+	.flex-container2 {
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		flex-direction: row;
+		display:-webkit-flex;
+		display:flex;
 
-/* effect unser bauernhof nav --------------------------------- */
+	}
 
+	.nav-container img {
+		width: 100%;
+		height: 100%;
+		float: left;
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:flex;
 
-.grid {
-	position: relative;
-	clear: both;
-	margin: 0 auto;
-	padding: 1em 0 4em ;
-	width: 100%;
-/*	height: 100%;*/
-	height: 37.5vw;
-	list-style: none;
-	text-align: center;
-}
+	}
 
-/* Common style */
-.grid figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 0em 0em;
-	width: 100%;
-	height: 100%;
-	width: 50%;
-	height: auto;
-	background: #3085a3;
-	text-align: center;
-	cursor: pointer;
-}
+	.view {
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		cursor: default;
+		width: 100%;
 
-.grid figure img {
-	position: relative;
-	display: block;
-	height: 100%;
-	width: 100%;
-	opacity: 0.8;
-}
-
-.grid figure figcaption {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	color: #fff;
-/*	text-transform: uppercase;*/
-	font-size: 1.8vw;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-	pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
-
-.grid figure h2 {
-	padding-top: 5vw;
-	word-spacing: 0.15vw;
-	font-weight: 500;
-	font-size: 2.5vw;
-}
-
-.grid figure h2 span {
-	font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-	margin: 0;
-}
-
-.grid figure p {
-	letter-spacing: 1px;
-	font-size: 78.5%;
-}
-
-/* Effenct ---------------*/
+	}
 
 
 
-figure.effect-ming {
-	background: #030c17;
-}
+	.effect .mask {
+		position:absolute; /* Center the mask */
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		cursor:pointer;
+		display: inline-block;
+		background-color: rgba(0, 0, 0, 0.75);
+		opacity:1;
+		visibility:visible;
+		-moz-transition:all 0.8s ease-in-out;
+		-webkit-transition:all 0.8s ease-in-out;
+		-o-transition:all 0.8s ease-in-out;
+		-ms-transition:all 0.8s ease-in-out;
+		transition:all 0.8s ease-in-out;
+	}
 
-figure.effect-ming img {
-	width: 100%;
-	height: 100%;
-	opacity: 0.9;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-}
+	.effect:hover .mask {
+		opacity: 0;
+		background-color: rgba(0, 0, 0, 0.75);
+		visibility:hidden;
+	}
 
-figure.effect-ming figcaption::before {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	border: 2px solid #fff;
-	box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
-	content: '';
-	opacity: 0;
-	-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
-	transition: opacity 0.8s, transform 0.8s;
-	-webkit-transform: scale3d(1.4,1.4,1);
-	transform: scale3d(1.4,1.4,1);
+	.effect img {
+		transition: all 0.8s ease-in-out;
+		-moz-transition: all 0.8s ease-in-out;
+		-webkit-transition: all 0.8s ease-in-out;
+		-o-transition: all 0.8s ease-in-out;
+		-ms-transition: all 0.8s ease-in-out;
+
+	}
+
+	.effect:hover img {
+		transform: scale(1.02);
+		-moz-transform: scale(1.02);
+		-webkit-transform: scale(1.02);
+		-o-transform: scale(1.02);
+		-ms-transform: scale(1.02);
+	}
+
+	.navigation-title {
+		z-index: 1000;
+		color: white;
+		position:absolute; 
+		width: 100%;
+		margin-top: 33%;
+		font-weight: 400;
+		font-size: 2.5vw;
+		transition: all 0.8s ease-in-out;
+		-moz-transition: all 0.8s ease-in-out;
+		-webkit-transition: all 0.8s ease-in-out;
+		-o-transition: all 0.8s ease-in-out;
+		-ms-transition: all 0.8s ease-in-out;
+	}
+
+	.effect:hover .navigation-title {
+		transform: scale(0.98);
+		-moz-transform: scale(0.98);
+		-webkit-transform: scale(0.98);
+		-o-transform: scale(0.98);
+		-ms-transform: scale(0.98);
+	}
+
+	/* effect unser bauernhof nav --------------------------------- */
+
+
+	.grid {
+		position: relative;
+		clear: both;
+		margin: 0 auto;
+		padding: 1em 0 4em;
+		width: 100%;
+		/*	height: 100%;*/
+		height: 37.5vw;
+		list-style: none;
+		text-align: center;
+	}
+
+	/* Common style */
+	.grid figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 0em 0em;
+		width: 100%;
+		height: 100%;
+		width: 50%;
+		height: auto;
+		background: #3085a3;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.grid figure img {
+		position: relative;
+		display: block;
+		height: 100%;
+		width: 100%;
+		opacity: 0.8;
+	}
+
+	.grid figure figcaption {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		color: #fff;
+		/*	text-transform: uppercase;*/
+		font-size: 1.8vw;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.grid figure figcaption::before,
+	.grid figure figcaption::after {
+		pointer-events: none;
+	}
+
+	.grid figure figcaption,
+	.grid figure figcaption > a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* Anchor will cover the whole item by default */
+	/* For some effects it will show as a button */
+	.grid figure figcaption > a {
+		z-index: 1000;
+		text-indent: 200%;
+		white-space: nowrap;
+		font-size: 0;
+		opacity: 0;
+	}
+
+	.grid figure h2 {
+		padding-top: 5vw;
+		word-spacing: 0.15vw;
+		font-weight: 500;
+		font-size: 2.5vw;
+	}
+
+
+
+	.grid figure h2,
+	.grid figure p {
+		margin: 0;
+	}
+
+	.grid figure p {
+		letter-spacing: 1px;
+		font-size: 78.5%;
+	}
+
+	/* Effenct ---------------*/
+
+
+
+	figure.effect-ming {
+		background: #030c17;
+	}
+
+	figure.effect-ming img {
+		width: 100%;
+		height: 100%;
+		opacity: 0.95;
+		-webkit-transition: opacity 0.8s;
+		transition: opacity 0.8s;
+	}
+
+	figure.effect-ming figcaption::before {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		bottom: 30px;
+		left: 30px;
+/*	border: 2px solid #fff;
+box-shadow: 0 0 0 30px rgba(255,255,255,0.2);*/
+content: '';
+opacity: 0;
+-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+transition: opacity 0.8s, transform 0.8s;
+-webkit-transform: scale3d(1.4,1.4,1);
+transform: scale3d(1.4,1.4,1);
 }
 
 figure.effect-ming h2 {
@@ -945,6 +1016,11 @@ figure.effect-ming:hover img {
 	opacity: 0.4;
 }
 
+/*---------------------------------------------------------
+--------------------- Slider ------------------------------
+----------------------------------------------------------*/
+
+
 
 /*---------------------------------------------------------
 --------------------- Media Queries -----------------------
@@ -953,112 +1029,112 @@ figure.effect-ming:hover img {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
+	/* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
-/* Styles */
+	/* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
-/* Styles */
+	/* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
+	/* Styles */
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
+	/* Styles */
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
+	/* Styles */
 }
 /**********
 iPad 3
 **********/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+	/* Styles */
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+	/* Styles */
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-/* Styles */
+	/* Styles */
 }
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
-/* Styles */
+	/* Styles */
 }
 
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+	/* Styles */
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+	/* Styles */
 }
 
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+	/* Styles */
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+	/* Styles */
 }
 
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+	/* Styles */
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+	/* Styles */
 }
 
 /* iPhone 6+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+	/* Styles */
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+	/* Styles */
 }
 
 /* Samsung Galaxy S3 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+	/* Styles */
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+	/* Styles */
 }
 
 /* Samsung Galaxy S4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+	/* Styles */
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+	/* Styles */
 }
 
 /* Samsung Galaxy S5 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+	/* Styles */
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+	/* Styles */
 }
