@@ -136,7 +136,7 @@ $('.button').hover(function() {
 
  // slider
 
- 
+
 
 
     // blur background of an element
