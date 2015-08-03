@@ -568,7 +568,7 @@ ul {
 
 .pure-form {
 	width: 100%;
-	margin-left: 7vw;
+	margin-left: 10vw;
 	font-family: SourceSansPro-Regular;
 	font-size: 1.3vw;
 	font-color: #AAB2BD;
@@ -593,7 +593,7 @@ ul {
 .adresse {
 	width: 100%;
 	font-size: 1.3vw;
-	padding-right: 7vw;
+	padding-right: 10vw;
 }
 
 
@@ -607,7 +607,7 @@ ul {
 	width: 60%;
 	float: left;
 /*	margin: 2vw auto;
-*/	padding: 0vw 3vw 0vw 7vw;
+*/	padding: 0vw 3vw 0vw 10vw;
 /*	background: #F7F7F7;
 */	border-radius: 3px;
 
@@ -861,6 +861,7 @@ textarea {
 	}
 
 	/* effect unser bauernhof nav --------------------------------- */
+
 
 
 	.grid {
