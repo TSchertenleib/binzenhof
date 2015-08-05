@@ -93,14 +93,45 @@ $('.button').hover(function() {
 
 });
 
+
     // scroll to position
     $('.button').click(function() {
-
         $('.main-navigation').scrollView();
     });
 
 
 
+    // hamburger
+
+    (function() {
+
+      "use strict";
+
+      var toggles = document.querySelectorAll(".c-hamburger");
+
+      for (var i = toggles.length - 1; i >= 0; i--) {
+        var toggle = toggles[i];
+        toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+        toggle.addEventListener( "click", function(e) {
+          e.preventDefault();
+          (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+
+})();
+
+
+    
+
+
+    $('.c-hamburger').click(function(){
+    $('.unterliste2').css('opacity', function(i,o){
+        return parseFloat(o).toFixed(1) === '0.0' ? 1 : 0.0;
+    });
+});
 
     // google maps integration
 
@@ -114,20 +145,20 @@ $('.button').hover(function() {
           mapTypeId: google.maps.MapTypeId.ROADMAP 
           //ROADMAP HYBRID TERRAIN SATELLITE
       }
-    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
       var myIcon='https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-128.png';
       var marker = new google.maps.Marker({ position: {lat:47.378237, lng:8.0470636}, map: map, icon: myIcon, optimized:false });
 
       // var marker = new google.maps.Marker({
       //   map: map,position: new google.maps.LatLng(47.378237, 8.047063600000001)});
- 
+
      // I create an OverlayView, and set it to add the "markerLayer" class to the markerLayer DIV
      // var myoverlay = new google.maps.OverlayView();
- 
+
      myoverlay.draw = function () {
-         this.getPanes().markerLayer.id='markerLayer';
-     };
+       this.getPanes().markerLayer.id='markerLayer';
+   };
      // myoverlay.setMap(map);
 
  }

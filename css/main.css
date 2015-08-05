@@ -16,7 +16,7 @@ body	{
 	font-family: 'source sans pro', 'Helvetica', sans-serif;
 	font-weight: 300;
 	font-size: 1.3vw;
-	background-image: url(media/images/start.png);
+
 
 }
 
@@ -76,10 +76,12 @@ header {
 	font-family: 'source serif pro';
 /*	font-size: 1.2vw !important;
 */	width: 57%;
-	text-align: center;
-	float: left;
-	display:block;
-	letter-spacing: 1px;
+text-align: center;
+float: left;
+display:block;
+letter-spacing: 1px;
+font-weight: 600;
+text-rendering: geometricPrecision; 
 
 }
 
@@ -91,17 +93,21 @@ header {
 
 
 
-.unterliste>li	{
+.unterliste1>li	{
+	float:right;
+
+}
+
+.unterliste2>li	{
 	float:right;
 
 }
 
 
-
 /* Unterseite Navigation -> noch Leute fragen --------------------------------- */
 
 
-#navigation	{
+/*#navigation	{
 	width: 43%;
 	float:left;
 	display:block;
@@ -117,443 +123,441 @@ header {
 	opacity: 0.3;
 	background: #298441;
 
-}
+	}*/
 
 
-
-
-nav a {
-	text-decoration:none;
-	color: white;
-	padding-left: 3.3vw;
-	font-size: 1.2vw;
-
-}
-
-nav a:hover {
-	opacity: 0.8;
-
-}
-
-ul {
-	list-style: none;
-	padding-left:0;
-	padding-top: 1vw;
-	padding-right: 3.5vw;
-	position: static;	
-}
-
-
-/* Start Main --------------------------------- */
-
-
-
-
-.uebertitel {
-	position: absolute;
-	z-index: 100;
-	width: 100%;
-	color: white;
-	text-align: center;
-	padding-top: 30%;
-
-}
-
-
-.uebertitel>h1 {
-	font-size: 3vw;
-	font-weight: 400;
-	margin: 0;
-}
-
-.uebertitel>h3 {
-	font-size: 1.5vw;
-	font-weight: 300;
-	margin: 0;
-}
-
-.uebertitel-zoom{
-	-moz-transition:all 0.8s ease-in-out;
-	-webkit-transition:all 0.8s ease-in-out;
-	-o-transition:all 0.8s ease-in-out;
-	-ms-transition:all 0.8s ease-in-out;
-	transition:all 0.8s ease-in-out;
-	transform: scale(1.01);
-}
-
-.bgimage {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	-ms-background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-	-moz-transition:all 0.8s ease-in-out;
-	-webkit-transition:all 0.8s ease-in-out;
-	-o-transition:all 0.8s ease-in-out;
-	-ms-transition:all 0.8s ease-in-out;
-	transition:all 0.8s ease-in-out;
-
-
-
-	opacity: 1;
-}
-
-.img-zoom{
-	-moz-transform: scale(1.01);
-	-webkit-transform: scale(1.01);
-	-o-transform: scale(1.01);
-	-ms-transform: scale(1.01);
-	transform: scale(1.01);
-	opacity: 0.25;
-}
-
-
-
-.button {
-	letter-spacing: 2px;
-	font-size: 2.5vw;
-	background-color:transparent;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	-o-border-radius:3px;
-	-ms-border-radius:3px;
-	border-radius:3px;
-	border:1px solid white;
-	display:inline-block;
-	cursor:pointer;
-	color:white;
-	font-weight:200;
-	padding:1.3vw 3.2vw;
-	text-decoration:none;
-}
-
-
-.button-wrapper {
-	position: absolute;
-	top: 38vw;
-	width: 100%;
-	text-align: center;
-}
-
-.mask {
-	position:absolute; 
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	cursor:pointer;
-	
-	-moz-transition:all 0.8s ease-in-out;
-	-webkit-transition:all 0.8s ease-in-out;
-	-o-transition:all 0.8s ease-in-out;
-	-ms-transition:all 0.8s ease-in-out;
-	transition:all 0.8s ease-in-out;
-
-}
-
-.inhalt{
-	background: #000;
-}
-
-.start-effect{
-	/*background-color: rgba(0, 0, 0, 0.75);*/
-	opacity: 1;
-	-moz-transition:all 0.8s ease-in-out;
-	-webkit-transition:all 0.8s ease-in-out;
-	-o-transition:all 0.8s ease-in-out;
-	-ms-transition:all 0.8s ease-in-out; 
-	transition:all 0.8s ease-in-out;
-	
-}
-
-
-
-/* Unterseiten Main --------------------------------- */
-
-.abstand-oben {
-	width:100%;
-	height: 7vw	;
-}
-
-
-.ueberbild {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	-moz-transition:all 0.8s ease-in-out;
-	-webkit-transition:all 0.8s ease-in-out;
-	-o-transition:all 0.8s ease-in-out;
-	-ms-transition:all 0.8s ease-in-out;
-	transition:all 0.8s ease-in-out;
-	opacity: 1;
-}
-
-
-.text {
-	width: 100%;
-	padding: 2vw 10vw 1vw;
-}
-
-.uebertext-titel h1 {
-	padding-bottom: 1vw;
-	width: 100%;
-	font-weight: 400;
-	font-size: 2.6vw;
-	line-height: 2.8vw;
-	color: #9E9E9E;
-}
-
-.uebertext>p {
-	width: 100%;
-	padding-bottom: 1vw;
-	text-align: left;
-	font-size: 1.3vw;
-	line-height: 1.6vw;
-	column-count: 2;
-	column-gap: 8vw;
-	column-rule: 0px choose #000000;
-	-moz-column-count: 2;
-	-moz-column-gap: 8vw;
-	-moz-column-rule: 0px choose #000000;
-	-webkit-column-count: 2;
-	-webkit-column-gap: 8vw;
-	-webkit-column-rule: 0px choose #000000;
-	-o-column-count: 2;
-	-o-webkit-column-gap: 8vw;
-	-o-webkit-column-rule: 0px choose #000000;
-	-ms-column-count: 2;
-	-ms-column-gap: 8vw;
-	-ms-column-rule: 0px choose #000000;
-}
-
-.kontakt-text>p {
-	width: 50%;
-	padding-bottom: 1vw;
-	text-align: left;
-	font-size: 1.3vw;
-	line-height: 1.6vw;	
-}
-
-/* Unser-Bauernhof Untermenu --------------------------------- */
-
-.unser-bauernhof-untermenu {
-	min-width: 100%;
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	display:-webkit-flex;
-	display:flex;
-	flex-direction: column;
-}
-
-.felx-container-bh-nav {
-	flex-direction: row;
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	display:-webkit-flex;
-	display:flex;
-}
-
-.unser-bauernhof-untermenu img {
-	width: 100%;
-	height: 100%;
-	float: left;
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	display:-webkit-flex;
-	display:flex;
-}
-
-/* Über uns Portraits Sektion --------------------------------- */
-
-
-.portraits-container {
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	display:-webkit-flex;
-	display:flex;
-	flex-direction: row;
-}
-
-.img-container{
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	display:-webkit-flex;
-	display:flex;
-	width:50%;
-}
-
-.img-container img {
-	width: 100%;
-	height: 100%;
-
-}
-
-.angaben-container {
-	display:-ms-flex;
-	display:-o-flex;
-	display:-moz-flex;
-	display:-webkit-flex;
-	display:flex;
-
-	background: #EEEEEE;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-	cursor: default;
-	width: 50%;
-}
-
-.angaben-container h2 {
-	transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	-webkit-transform: translate3d(0,0,0);
-	-o-transform: translate3d(0,0,0);
-	-ms-transform: translate3d(0,0,0);
-	font-weight: 400;
-	font-size: 2.4vw;
-	line-height: 2.8vw;
-	color: #9E9E9E;
-	text-align: center;
-
-	position:absolute; 
-	width: 100%;
-	margin-top: 25%;
-	transition: all 0.8s ease-in-out;
-	-moz-transition: all 0.8s ease-in-out;
-	-webkit-transition: all 0.8s ease-in-out;
-	-o-transition: all 0.8s ease-in-out;
-	-ms-transition: all 0.8s ease-in-out;
-
-	visibility: visible;
-	opacity: 0;
-}
-
-.angaben-container p {
-	transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	-webkit-transform: translate3d(0,0,0);
-	-o-transform: translate3d(0,0,0);
-	-ms-transform: translate3d(0,0,0);
-	display: block;
-	width: 100%;
-	clear: both;
-	text-align: center;
-	font-size: 1.1vw;
-	line-height: 2vw;
-
-	position:absolute; 
-	width: 100%;
-	margin-top: 30%;
-	transition: all 0.8s ease-in-out;
-	-moz-transition: all 0.8s ease-in-out;
-	-webkit-transition: all 0.8s ease-in-out;
-	-o-transition: all 0.8s ease-in-out;
-	-ms-transition: all 0.8s ease-in-out;
-	visibility: visible;
-	opacity: 0;
-}
-
-/* Unsere Tiere Slider Sektion -> grau improvisiert --------------------------------- */
-
-.slider {
-
-}
-
-.slider-uebercontainer {
-
-}
-
-.grau-container {
-
-}
-
-/* Über uns transitions --------------------------------- */
-
-.portraits-container:hover .zoom {
-	visibility: visible;
-	opacity: 1;
-	-moz-transition:all 0.8s ease-in-out;
-	-webkit-transition:all 0.8s ease-in-out;
-	-o-transition:all 0.8s ease-in-out;
-	-ms-transition:all 0.8s ease-in-out;
-	transition:all 0.8s ease-in-out;
-	-moz-transform: scale(1.03);
-	-webkit-transform: scale(1.03);
-	-o-transform: scale(1.03);
-	-ms-transform: scale(1.0);
-	transform: scale(1.03);
-}
-
-/* Anfragen -> Events & Hoflaedeli --------------------------------- */
-
-
-.anfragen {
-	padding: 6vw 10vw 8vw;
-	text-align: center;
-}
-
-.anfragen h3 {
-	font-weight: 300;
-}
-
-.anfragen a {
-	color: #9E9E9E;
-	font-weight: 600;
-	font-size: 2.8vw;
-	line-height: 2.8vw;
-	text-decoration: none;
-}
-
-.anfragen a:hover {
-	color: #000000;
-	font-weight: 600;
-	font-size: 2.8vw;
-	line-height: 2.8vw;
-	text-decoration: none;
-}
-
-
-/* Hoflädeli --------------------------------- */
-
-.text h3 {
-	font-size: 2vw;
-	font-weight: 300;	
-}
-
-.grau-container {
-	width:100%;
-	height: 100%;
-	background: #EEEEEE;
-}
-
-.oeffnungszeiten {
-	padding: 1vw 31vw 4vw;
-}
-
-.oeffnungszeiten p {
-	text-align: center;
-	width: 100%;
-	font-size: 1.3vw;
-	line-height: 2vw;
-
-}
-
-/* Kontakt --------------------------------- */
-
-#map-canvas {
-	width: 100%;
-	height: 42.5vw;  /* (bildgrösse/4 *3) */
-
-}
+	nav a {
+		text-decoration:none;
+		color: white;
+		padding-left: 3.3vw;
+		font-size: 1.2vw;
+
+	}
+
+	nav a:hover {
+		opacity: 0.8;
+
+	}
+
+	ul {
+		list-style: none;
+		padding-left:0;
+		padding-top: 1vw;
+		padding-right: 3.5vw;
+		position: static;	
+	}
+
+
+	/* Start Main --------------------------------- */
+
+
+
+
+	.uebertitel {
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+		color: white;
+		text-align: center;
+		padding-top: 30%;
+
+	}
+
+
+	.uebertitel>h1 {
+		font-size: 3vw;
+		font-weight: 400;
+		margin: 0;
+	}
+
+	.uebertitel>h3 {
+		font-size: 1.5vw;
+		font-weight: 300;
+		margin: 0;
+	}
+
+	.uebertitel-zoom{
+		-moz-transition:all 0.8s ease-in-out;
+		-webkit-transition:all 0.8s ease-in-out;
+		-o-transition:all 0.8s ease-in-out;
+		-ms-transition:all 0.8s ease-in-out;
+		transition:all 0.8s ease-in-out;
+		transform: scale(1.01);
+	}
+
+	.bgimage {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		-ms-background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+		-moz-transition:all 0.8s ease-in-out;
+		-webkit-transition:all 0.8s ease-in-out;
+		-o-transition:all 0.8s ease-in-out;
+		-ms-transition:all 0.8s ease-in-out;
+		transition:all 0.8s ease-in-out;
+
+
+
+		opacity: 1;
+	}
+
+	.img-zoom{
+		-moz-transform: scale(1.01);
+		-webkit-transform: scale(1.01);
+		-o-transform: scale(1.01);
+		-ms-transform: scale(1.01);
+		transform: scale(1.01);
+		opacity: 0.25;
+	}
+
+
+
+	.button {
+		letter-spacing: 2px;
+		font-size: 2.5vw;
+		background-color:transparent;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		-o-border-radius:3px;
+		-ms-border-radius:3px;
+		border-radius:3px;
+		border:1px solid white;
+		display:inline-block;
+		cursor:pointer;
+		color:white;
+		font-weight:200;
+		padding:1.3vw 3.2vw;
+		text-decoration:none;
+	}
+
+
+	.button-wrapper {
+		position: absolute;
+		top: 38vw;
+		width: 100%;
+		text-align: center;
+	}
+
+	.mask {
+		position:absolute; 
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		cursor:pointer;
+
+		-moz-transition:all 0.8s ease-in-out;
+		-webkit-transition:all 0.8s ease-in-out;
+		-o-transition:all 0.8s ease-in-out;
+		-ms-transition:all 0.8s ease-in-out;
+		transition:all 0.8s ease-in-out;
+
+	}
+
+	.inhalt{
+		background: #000;
+	}
+
+	.start-effect{
+		/*background-color: rgba(0, 0, 0, 0.75);*/
+		opacity: 1;
+		-moz-transition:all 0.8s ease-in-out;
+		-webkit-transition:all 0.8s ease-in-out;
+		-o-transition:all 0.8s ease-in-out;
+		-ms-transition:all 0.8s ease-in-out; 
+		transition:all 0.8s ease-in-out;
+
+	}
+
+
+
+	/* Unterseiten Main --------------------------------- */
+
+	.abstand-oben {
+		width:100%;
+		height: 7vw	;
+	}
+
+
+	.ueberbild {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		-moz-transition:all 0.8s ease-in-out;
+		-webkit-transition:all 0.8s ease-in-out;
+		-o-transition:all 0.8s ease-in-out;
+		-ms-transition:all 0.8s ease-in-out;
+		transition:all 0.8s ease-in-out;
+		opacity: 1;
+	}
+
+
+	.text {
+		width: 100%;
+		padding: 2vw 10vw 1vw;
+	}
+
+	.uebertext-titel h1 {
+		padding-bottom: 1vw;
+		width: 100%;
+		font-weight: 400;
+		font-size: 2.6vw;
+		line-height: 2.8vw;
+		color: #9E9E9E;
+	}
+
+	.uebertext>p {
+		width: 100%;
+		padding-bottom: 1vw;
+		text-align: left;
+		font-size: 1.3vw;
+		line-height: 1.6vw;
+		column-count: 2;
+		column-gap: 8vw;
+		column-rule: 0px choose #000000;
+		-moz-column-count: 2;
+		-moz-column-gap: 8vw;
+		-moz-column-rule: 0px choose #000000;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 8vw;
+		-webkit-column-rule: 0px choose #000000;
+		-o-column-count: 2;
+		-o-webkit-column-gap: 8vw;
+		-o-webkit-column-rule: 0px choose #000000;
+		-ms-column-count: 2;
+		-ms-column-gap: 8vw;
+		-ms-column-rule: 0px choose #000000;
+	}
+
+	.kontakt-text>p {
+		width: 50%;
+		padding-bottom: 1vw;
+		text-align: left;
+		font-size: 1.3vw;
+		line-height: 1.6vw;	
+	}
+
+	/* Unser-Bauernhof Untermenu --------------------------------- */
+
+	.unser-bauernhof-untermenu {
+		min-width: 100%;
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:flex;
+		flex-direction: column;
+	}
+
+	.felx-container-bh-nav {
+		flex-direction: row;
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:flex;
+	}
+
+	.unser-bauernhof-untermenu img {
+		width: 100%;
+		height: 100%;
+		float: left;
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:flex;
+	}
+
+	/* Über uns Portraits Sektion --------------------------------- */
+
+
+	.portraits-container {
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:flex;
+		flex-direction: row;
+	}
+
+	.img-container{
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:flex;
+		width:50%;
+	}
+
+	.img-container img {
+		width: 100%;
+		height: 100%;
+
+	}
+
+	.angaben-container {
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:flex;
+
+		background: #EEEEEE;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		cursor: default;
+		width: 50%;
+	}
+
+	.angaben-container h2 {
+		transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-o-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		font-weight: 400;
+		font-size: 2.4vw;
+		line-height: 2.8vw;
+		color: #9E9E9E;
+		text-align: center;
+
+		position:absolute; 
+		width: 100%;
+		margin-top: 25%;
+		transition: all 0.8s ease-in-out;
+		-moz-transition: all 0.8s ease-in-out;
+		-webkit-transition: all 0.8s ease-in-out;
+		-o-transition: all 0.8s ease-in-out;
+		-ms-transition: all 0.8s ease-in-out;
+
+		visibility: visible;
+		opacity: 0;
+	}
+
+	.angaben-container p {
+		transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-o-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		display: block;
+		width: 100%;
+		clear: both;
+		text-align: center;
+		font-size: 1.1vw;
+		line-height: 2vw;
+
+		position:absolute; 
+		width: 100%;
+		margin-top: 30%;
+		transition: all 0.8s ease-in-out;
+		-moz-transition: all 0.8s ease-in-out;
+		-webkit-transition: all 0.8s ease-in-out;
+		-o-transition: all 0.8s ease-in-out;
+		-ms-transition: all 0.8s ease-in-out;
+		visibility: visible;
+		opacity: 0;
+	}
+
+	/* Unsere Tiere Slider Sektion -> grau improvisiert --------------------------------- */
+
+	.slider {
+
+	}
+
+	.slider-uebercontainer {
+
+	}
+
+	.grau-container {
+
+	}
+
+	/* Über uns transitions --------------------------------- */
+
+	.portraits-container:hover .zoom {
+		visibility: visible;
+		opacity: 1;
+		-moz-transition:all 0.8s ease-in-out;
+		-webkit-transition:all 0.8s ease-in-out;
+		-o-transition:all 0.8s ease-in-out;
+		-ms-transition:all 0.8s ease-in-out;
+		transition:all 0.8s ease-in-out;
+		-moz-transform: scale(1.03);
+		-webkit-transform: scale(1.03);
+		-o-transform: scale(1.03);
+		-ms-transform: scale(1.0);
+		transform: scale(1.03);
+	}
+
+	/* Anfragen -> Events & Hoflaedeli --------------------------------- */
+
+
+	.anfragen {
+		padding: 6vw 10vw 8vw;
+		text-align: center;
+	}
+
+	.anfragen h3 {
+		font-weight: 300;
+	}
+
+	.anfragen a {
+		color: #9E9E9E;
+		font-weight: 600;
+		font-size: 2.8vw;
+		line-height: 2.8vw;
+		text-decoration: none;
+	}
+
+	.anfragen a:hover {
+		color: #000000;
+		font-weight: 600;
+		font-size: 2.8vw;
+		line-height: 2.8vw;
+		text-decoration: none;
+	}
+
+
+	/* Hoflädeli --------------------------------- */
+
+	.text h3 {
+		font-size: 2vw;
+		font-weight: 300;	
+	}
+
+	.grau-container {
+		width:100%;
+		height: 100%;
+		background: #EEEEEE;
+	}
+
+	.oeffnungszeiten {
+		padding: 1vw 31vw 4vw;
+	}
+
+	.oeffnungszeiten p {
+		text-align: center;
+		width: 100%;
+		font-size: 1.3vw;
+		line-height: 2vw;
+
+	}
+
+	/* Kontakt --------------------------------- */
+
+	#map-canvas {
+		width: 100%;
+		height: 42.5vw;  /* (bildgrösse/4 *3) */
+
+	}
 
 /*#markerLayer img {
 	width: 100% !important;
@@ -568,7 +572,7 @@ ul {
 
 .pure-form {
 	width: 100%;
-	margin-left: 10vw;
+	margin-left: vw;
 	font-family: SourceSansPro-Regular;
 	font-size: 1.3vw;
 	font-color: #AAB2BD;
@@ -739,7 +743,10 @@ textarea {
 		display:-o-flex;
 		display:-moz-flex;
 		display:-webkit-flex;
+		display:-webkit-box;
+		display:-ms-flexbox;
 		display:flex;
+
 
 	}
 
@@ -749,7 +756,13 @@ textarea {
 		display:-o-flex;
 		display:-moz-flex;
 		display:-webkit-flex;
+		display:-webkit-box;
+		display:-ms-flexbox;
 		display:flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
@@ -760,6 +773,7 @@ textarea {
 		flex-direction: row;
 		display:-webkit-flex;
 		display:flex;
+		flex-direction: row;
 
 	}
 
@@ -770,6 +784,7 @@ textarea {
 		flex-direction: row;
 		display:-webkit-flex;
 		display:flex;
+		flex-direction: row;
 
 	}
 
@@ -1031,114 +1046,258 @@ figure.effect-ming:hover img {
 ----------------------------------------------------------*/
 
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	/* Styles */
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-	/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-	/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-	/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-	/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-	/* Styles */
-}
-/**********
-iPad 3
-**********/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-	/* Styles */
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-	/* Styles */
-}
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-	/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-	/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-	/* Styles */
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-	/* Styles */
-}
 
 /* iPhone 5 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2){
 	/* Styles */
+
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2){
 	/* Styles */
 }
 
 /* iPhone 6 ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-	/* Styles */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2){
+
+
+	/* header menu --------------------------------- */
+
+	header {
+		height: 248px;
+		-webkit-transition: top 0.5s ease-in-out;
+		transition: top 0.5s ease-in-out;
+	}
+
+	#start-navibackground {
+		background: rgba(30,30,30,0.70);
+
+	}
+
+	#logo{
+		font-family: 'source serif pro';
+
+		padding-left: 45vw;
+		float: left;
+		display:block;
+		letter-spacing: 2px;
+		font-weight: 200;
+	}
+
+
+	#start-navigation	{
+		clear: both;
+
+	}
+
+
+	.sichtbarkeit{
+		opacity: 0;
+
+		-webkit-transition:all 0.8s ease-in-out;
+		transition:all 0.8s ease-in-out;
+	}
+
+
+	.unterliste2{
+		font-weight: 600;
+
+		opacity: 0;
+		background: rgba(30,30,30,0.70);
+		padding-top: 40vw;
+		-webkit-transition:all 0.8s ease-in-out;
+		transition:all 0.8s ease-in-out;
+
+	}
+	.unterliste2 a{
+		padding-top: 5vw;
+	}
+
+
+
+	.unterliste1	{
+		clear: both;
+		padding-top: 3vw;
+	}
+
+
+
+	nav a {
+		width: 100%;
+		display: table;
+		text-decoration:none;
+		text-align: center;
+		color: white;
+		font-size: 6vw;
+	}
+
+	nav a:hover {
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+
+	}
+
+	ul {
+		list-style: none;
+		position: fixed;
+		width: 375px;
+		text-align: center;;	
+	}
+
+	/* hamburger menu --------------------------------- */
+
+
+
+	.c-hamburger {
+		right: 4vw;
+		float: right;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 180px;
+		height: 220px;
+		font-size: 0;
+		text-indent: -9999px;
+		appearance: none;
+		box-shadow: none;
+		border-radius: none;
+		border: none;
+		cursor: pointer;
+		transition: background 0.3s;
+	}
+
+	.c-hamburger:focus {
+		outline: none;
+	}
+
+
+
+
+	.c-hamburger span {
+		display: block;
+		position: absolute;
+		top: 52%;
+		left: 18px;
+		right: 18px;
+		height: 8px;
+		background: white;
+		-moz-border-radius:5px; /* Firefox */
+		-webkit-border-radius:5px; /* Chrome, Safari */
+		-khtml-border-radius:5px; /* Konqueror */
+		border-radius:5px; /
+	}
+
+	.c-hamburger span::before,
+	.c-hamburger span::after {
+		position: absolute;
+		display: block;
+		left: 0;
+		width: 100%;
+		height: 8px;
+		background-color: #fff;
+		content: "";
+		-moz-border-radius:5px; /* Firefox */
+		-webkit-border-radius:5px; /* Chrome, Safari */
+		-khtml-border-radius:5px; /* Konqueror */
+		border-radius:5px; /
+	}
+
+	.c-hamburger span::before {
+		top: -30px;
+	}
+
+	.c-hamburger span::after {
+		bottom: -30px;
+	}
+
+
+
+
+
+
+
+	.c-hamburger--htx {
+		background-color: none;
+
+	}
+
+	.c-hamburger--htx span {
+		transition: background 0s 0.3s;
+	}
+
+	.c-hamburger--htx span::before,
+	.c-hamburger--htx span::after {
+		transition-duration: 0.3s, 0.3s;
+		transition-delay: 0.3s, 0s;
+	}
+
+	.c-hamburger--htx span::before {
+		transition-property: top, transform;
+	}
+
+	.c-hamburger--htx span::after {
+		transition-property: bottom, transform;
+	}
+
+	/* active state, i.e. menu open */
+	.c-hamburger--htx.is-active {
+		background-color: none;
+	}
+
+	.c-hamburger--htx.is-active span {
+		background: none;
+	}
+
+	.c-hamburger--htx.is-active span::before {
+		top: 0;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	.c-hamburger--htx.is-active span::after {
+		bottom: 0;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+
+	.c-hamburger--htx.is-active span::before,
+	.c-hamburger--htx.is-active span::after {
+		transition-delay: 0s, 0.3s;
+	}
+
+	/* start main --------------------------------- */
+
+	.button-wrapper{
+		display: none;
+	}
+
+	.main-navigation{
+		display: none; 	
+	}
+
+
+	.bgimage {
+		position: relative;
+		width: 400%;
+		height: 100%;
+		trans
+		opacity: 1;
+
+	}
+
+
+
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2){
 	/* Styles */
+
 }
 
-/* iPhone 6+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-	/* Styles */
-}
 
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2){
 	/* Styles */
-}
 
-/* Samsung Galaxy S3 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-	/* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-	/* Styles */
-}
-
-/* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-	/* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-	/* Styles */
-}
-
-/* Samsung Galaxy S5 ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-	/* Styles */
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-	/* Styles */
 }
