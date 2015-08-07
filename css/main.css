@@ -111,6 +111,7 @@ header {
 
 .unterliste2 {
 	float:left;
+	font-weight: 300;
 }
 
 .unterliste1 li{
@@ -313,7 +314,7 @@ ul {
 	color: #9E9E9E;
 }
 
-.uebertext>p {
+.uebertext p {
 	width: 100%;
 	padding-bottom: 1vw;
 	text-align: left;
@@ -1014,6 +1015,10 @@ figure.effect-ming:hover img {
 	opacity: 0.4;
 }
 
+.mehr {
+	visibility: hidden;
+}
+
 /*---------------------------------------------------------
 --------------------- Slider ------------------------------
 ----------------------------------------------------------*/
@@ -1055,6 +1060,9 @@ figure.effect-ming:hover img {
 		transition: top 0.5s ease-in-out;
 	}
 
+.nav-up {
+	top: -19vw; 
+}
 
 
 	#logo{
@@ -1304,9 +1312,116 @@ figure.effect-ming:hover img {
 
 	}
 
+	/* Unterseiten Main --------------------------------- */
 
-	/* unser bauernhof --------------------------------- */
 
+
+.text {
+	width: 100%;
+	padding: 0vw 2vw;
+}
+
+.uebertext-titel h1 {
+	padding-top: 3vw;	
+	padding-bottom: 1vw;
+
+	font-weight: 600;
+	font-size: 6.5vw;
+	line-height: 2.8vw;
+	color: #9E9E9E;
+}
+
+.uebertext p {
+	width: 100%;
+	padding-bottom: 1vw;
+	text-align: left;
+	font-size: 6vw;
+	line-height: 7vw;
+	font-weight: 300;
+	column-count: 1;
+	column-rule: 0px choose #000000;
+	-moz-column-count: 1;
+	-moz-column-rule: 0px choose #000000;
+	-webkit-column-count: 1;
+	-webkit-column-rule: 0px choose #000000;
+	-o-column-count: 1;
+	-o-webkit-column-rule: 0px choose #000000;
+	-ms-column-count: 1;
+	-ms-column-rule: 0px choose #000000;
+}
+
+.kontakt-text>p {
+	width: 50%;
+	padding-bottom: 1vw;
+	text-align: left;
+	font-size: 1.3vw;
+	line-height: 1.6vw;	
+}
+
+/* Unser-Bauernhof Untermenu --------------------------------- */
+
+.grid figure {
+
+	width: 100%;
+}
+
+
+.grid figure h2 {
+	padding-top: 20vw;
+	word-spacing: 0.15vw;
+	font-weight: 600;
+	font-size: 9.5vw;
+
+}
+
+
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure .mehr {
+	opacity: 1;
+	letter-spacing: 2px;
+	font-size: 4.5vw;
+	visibility: visible;
+	font-weight: 300;
+}
+
+figure.effect-ming img {
+	opacity: 0.6;
+}
+
+
+.beschriftung {
+	display: none;
+}
+
+/* Zitat --------------------------------- */
+
+.zitat {
+	padding-top:5vw;
+	text-align: center;
+	color: #9E9E9E;
+}
+
+.zitat h1 {
+	font-weight: 400;
+	font-style: italic;
+	font-size: 6vw;
+	line-height: 7vw;
+
+
+}
+
+.zitat h6 {
+	font-weight: 400;
+	font-size: 5vw;
+	line-height: 1.3vw;
+	margin-top: 0vw;
+	padding-top: 3vw;
+}
 
 }
 

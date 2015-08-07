@@ -6,7 +6,10 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
 var scrollOut = $(window).height()/2;
+var breite = $(window).height();
+
 var halbeBreite = $(window).width()/2;
+
 
 
 
