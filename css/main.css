@@ -101,16 +101,26 @@ header {
 	width: 43%;
 	float:left;
 	display:block;
+
 }
 
 
+.unterliste1,
+.unterliste2 {
+}
+
+.unterliste2 {
+	float:left;
+}
 
 .unterliste1 li{
 	float:right;
+	padding-right: 1vw;
 }
 
 .unterliste2 li{
-	float:right;
+	float:left;
+	padding-left: 1vw;
 
 }
 
@@ -1036,7 +1046,9 @@ figure.effect-ming:hover img {
 		width: 100%;
 	}
 
+
 	header {
+		top:-12px;
 		height: 19vw !important;
 	
 		-webkit-transition: top 0.5s ease-in-out;
@@ -1064,7 +1076,8 @@ figure.effect-ming:hover img {
 
 
 	.unterliste2{
-		top:-1;
+
+		top:-2;
 
 		clear: both;
 
@@ -1090,7 +1103,6 @@ figure.effect-ming:hover img {
 
 
 	.unterliste2 li {
-		clear: both;
 		text-align: center !important;
 		width: 100% !important;
 		margin: 2vw 0;
@@ -1098,7 +1110,6 @@ figure.effect-ming:hover img {
 	}
 
 	.unterliste1	{
-		clear: both;
 		padding-top: 3vw;
 		z-index: 100;
 
@@ -1127,6 +1138,10 @@ figure.effect-ming:hover img {
 		position: fixed;
 		width:25%;
 	}
+
+
+
+
 
 	/* hamburger menu --------------------------------- */
 
@@ -1288,6 +1303,10 @@ figure.effect-ming:hover img {
 
 
 	}
+
+
+	/* unser bauernhof --------------------------------- */
+
 
 }
 
