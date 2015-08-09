@@ -1070,9 +1070,7 @@ figure.effect-ming:hover img {
 
 
 
-	#start-navibackground {
 
-	}
 
 
 
@@ -1086,7 +1084,7 @@ figure.effect-ming:hover img {
 
 		opacity: 0;
 		
-		background: rgba(30,30,30,0.70);
+		background: rgba(30,30,30,0.85);
 		
 		padding-top:50%;
 
@@ -1141,6 +1139,9 @@ figure.effect-ming:hover img {
 	}
 
 
+	.uebertitel {
+		display:none;
+	}
 
 
 
