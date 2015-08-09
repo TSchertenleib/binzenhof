@@ -1150,15 +1150,15 @@ figure.effect-ming:hover img {
 
 	.c-hamburger {
 		clear: both;
-		right: 4vw;
+		right: 6vw;
 		float: right;
 		display: block;
 		position: fixed;
 		overflow: hidden;
 		margin: 0;
 		padding: 0;
-		width: 180px;
-		height: 220px;
+		width: 15%;
+		height: 10%;
 		font-size: 0;
 		text-indent: -9999px;
 		appearance: none;
@@ -1180,10 +1180,10 @@ figure.effect-ming:hover img {
 	.c-hamburger span {
 		display: block;
 		position: absolute;
-		top: 74px;
+		top: 8vw;
 		left: 18px;
 		right: 18px;
-		width: 120px;
+		width: 100%;
 		height: 6px;
 		background: white;
 		-moz-border-radius:5px; /* Firefox */
@@ -1197,7 +1197,7 @@ figure.effect-ming:hover img {
 		position: absolute;
 		display: block;
 		left: 0;
-		width: 120px;
+		width: 100%;
 		height: 6px;
 		background-color: #fff;
 		content: "";
