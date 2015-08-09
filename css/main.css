@@ -1270,6 +1270,10 @@ figure.effect-ming:hover img {
 		display: none;
 	}
 
+	.button-wrapper {
+		display: none;
+	}
+
 	.main-navigation{
 		display: none; 	
 	}
@@ -1520,7 +1524,7 @@ figure.effect-ming:hover img {
 
 
 	.adresse {
-		text-align: center;
+		text-align: left;
 		width: 100%;
 		font-size: 6vw;
 		padding: 0vw 4vw 4vw; /*wieso??*/
@@ -1536,7 +1540,7 @@ figure.effect-ming:hover img {
 		line-height: 7vw;
 		font-weight: 300;
 		list-style: none;
-	text-decoration:none;
+		text-decoration:none;
 
 	}
 
@@ -1600,3 +1604,7 @@ figure.effect-ming:hover img {
 	/* Styles */
 
 }
+
+
+
+
