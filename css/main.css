@@ -192,6 +192,7 @@ ul {
 	position: relative;
 	width: 100%;
 	height: 100%;
+
 	-ms-background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -207,6 +208,11 @@ ul {
 
 
 	opacity: 1;
+}
+
+.bgimage img {
+	width:100%;
+	height:100%;
 }
 
 .img-zoom{
@@ -713,11 +719,15 @@ textarea {
 	display:-ms-flexbox;
 	display:flex;
 
+	width: 100%;
+	height: 100%;
 
 }
 
 .nav-container {
-	min-width: 100%;
+	width: 100%;
+	height: 100%;
+
 	display:-ms-flex;
 	display:-o-flex;
 	display:-moz-flex;
@@ -733,6 +743,9 @@ textarea {
 }
 
 .flex-container1 {
+	width: 100%;
+	height: 100%;
+
 	display:-ms-flex;
 	display:-o-flex;
 	display:-moz-flex;
@@ -744,6 +757,9 @@ textarea {
 }
 
 .flex-container2 {
+	width: 100%;
+	height: 100%;
+
 	display:-ms-flex;
 	display:-o-flex;
 	display:-moz-flex;
@@ -796,6 +812,9 @@ textarea {
 }
 
 .effect:hover .mask {
+	width: 100%;
+	height: 100%;
+
 	opacity: 0;
 	background-color: rgba(0, 0, 0, 0.75);
 	visibility:hidden;
@@ -1283,12 +1302,13 @@ figure.effect-ming:hover img {
 	.bgimage {
 		overflow:hidden;
 		height: 100%;
+		width: 100%;
 
 	}
 
 	.bgimage img {
 
-		height: 100%;
+		overflow:hidden;
 	}
 
 
