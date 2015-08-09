@@ -1046,7 +1046,7 @@ figure.effect-ming:hover img {
 
 	header {
 		z-index: 5000;
-		top:-12px;
+		top:-10px;
 		height: 19vw !important;
 
 		-webkit-transition: top 0.5s ease-in-out;
@@ -1076,7 +1076,7 @@ figure.effect-ming:hover img {
 
 	.unterliste2{
 
-		top:-2;
+
 
 		clear: both;
 
@@ -1158,7 +1158,7 @@ figure.effect-ming:hover img {
 		overflow: hidden;
 		margin: 0;
 		padding: 0;
-		width: 15%;
+		width: 13%;
 		height: 10%;
 		font-size: 0;
 		text-indent: -9999px;
@@ -1182,10 +1182,9 @@ figure.effect-ming:hover img {
 		display: block;
 		position: absolute;
 		top: 8vw;
-		left: 18px;
-		right: 18px;
+
 		width: 100%;
-		height: 6px;
+		height: 0.7vw;
 		background: white;
 		-moz-border-radius:5px; /* Firefox */
 		-webkit-border-radius:5px; /* Chrome, Safari */
@@ -1199,7 +1198,7 @@ figure.effect-ming:hover img {
 		display: block;
 		left: 0;
 		width: 100%;
-		height: 6px;
+		height: 0.7vw;
 		background-color: #fff;
 		content: "";
 		-moz-border-radius:5px; /* Firefox */
@@ -1209,11 +1208,11 @@ figure.effect-ming:hover img {
 	}
 
 	.c-hamburger span::before {
-		top: -20px;
+		top: -2vw;
 	}
 
 	.c-hamburger span::after {
-		bottom: -20px;
+		bottom: -2vw;
 	}
 
 
