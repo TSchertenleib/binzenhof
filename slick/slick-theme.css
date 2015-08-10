@@ -19,6 +19,7 @@
 .slick-prev,
 .slick-next
 {
+    z-index: 1000;
     font-size: 0;
     line-height: 0;
 
@@ -27,8 +28,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     margin-top: -10px;
     padding: 0;
 
@@ -77,11 +78,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 5vw;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 5vw;
     left: auto;
 }
 .slick-prev:before
@@ -95,12 +96,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 5vw;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 5vw;
 }
 .slick-next:before
 {
@@ -110,6 +111,7 @@
 {
     content: '←';
 }
+
 
 /* Dots */
 .slick-slider

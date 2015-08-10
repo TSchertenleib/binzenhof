@@ -477,17 +477,7 @@ ul {
 
 /* Unsere Tiere Slider Sektion -> grau improvisiert --------------------------------- */
 
-.slider {
 
-}
-
-.slider-uebercontainer {
-
-}
-
-.grau-container {
-
-}
 
 /* Über uns transitions --------------------------------- */
 
@@ -1023,7 +1013,11 @@ figure.effect-ming:hover img {
 --------------------- Slider ------------------------------
 ----------------------------------------------------------*/
 
-
+.slider {
+	margin: 0 auto;
+    padding: 0 10vw;
+    width: 100%;
+}
 
 /*---------------------------------------------------------
 --------------------- Media Queries -----------------------
