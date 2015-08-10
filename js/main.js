@@ -162,17 +162,36 @@ $('.button').hover(function() {
     });
 
 
-    // $('.c-hamburger').click(function() {
-    //   $('.unterliste2').addClass('hintergrund');
+    // slider
 
-    // }, function() {
-    //   $('.unterliste2').removeClass('hintergrund');
+    $('.kuehe-slider').slick({
+      arrows: true,
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 3,
+      responsive: [
 
-    // });
-
-
-    // google maps integration
-
+      {
+        breakpoint: 667,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  });
 
 
     function initialize() {
@@ -187,7 +206,7 @@ $('.button').hover(function() {
 
         var myIcon='https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-128.png';
         var marker = new google.maps.Marker({ position: {lat:47.378237, lng:8.0470636}, map: map, icon: myIcon, optimized:false });
-   console.log('hallo');
+        console.log('hallo');
       // var marker = new google.maps.Marker({
       //   map: map,position: new google.maps.LatLng(47.378237, 8.047063600000001)});
 
@@ -201,9 +220,6 @@ $('.button').hover(function() {
 
    }
    google.maps.event.addDomListener(window, 'load', initialize);
-
- // slider
-
 
 
 
