@@ -138,28 +138,33 @@ $('.button').hover(function() {
           
           if  (this.classList.contains("is-active") === true) {
             this.classList.remove("is-active");
-            // $('.unterliste2').removeClass('hintergrund');
-
+            $('.unterliste2').css("display", "none");
+            $('.unterliste2').animate({ opacity: 0 }, 0);
+            // $('.unterliste2').hide();
           }else{
             this.classList.add("is-active");
-            // $('.unterliste2').addClass('hintergrund');
+            $('.unterliste2').css("display", "block");
+            $('.unterliste2').animate({ opacity: 1 }, 1);
+            // $('.unterliste2').show();
           }
 
         });
+
       }
 
     })();
 
 
-    
 
+    // $(".c-hamburger").on('click', function(e) {
+    //   $('.unterliste2').css('opacity', function(i,o){
+    //     return parseFloat(o).toFixed(1) === '0.0' ? 1 : 0.0;
+    //   });
 
-    $('.c-hamburger').click(function(){
-      $('.unterliste2').css('opacity', function(i,o){
-        return parseFloat(o).toFixed(1) === '0.0' ? 1 : 0.0;
-      });
+    // });
 
-    });
+// $('.unterliste2').is(':hidden') ? $('.unterliste2').show() : $('.unterliste2').hide();
+
 
 
     // slick slider
@@ -171,45 +176,14 @@ $('.button').hover(function() {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
-
-      // centerMode: true,
-      // centerPadding: '10vw',
-
-    //   responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //       infinite: true,
-    //       dots: true
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 667,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1
-    //     }
-    //   }
-    // // You can unslick at a given breakpoint now by adding:
-    // // settings: "unslick"
-    // // instead of a settings object
-    // ]
-  });
+    });
     
+
     $('.next-button-slick').click(function(){
-        $('.kuehe-slider').slickNext();
+      $('.kuehe-slider').slickNext();
     });
     $('.prev-button-slick').click(function(){
-        $('.kuehe-slider').slickPrev();
+      $('.kuehe-slider').slickPrev();
     });
 
 

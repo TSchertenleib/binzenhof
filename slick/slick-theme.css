@@ -23,15 +23,15 @@
     font-size: 0;
     line-height: 0;
 
+
+
     position: absolute;
-    top: 50%;
+    top: 11%;
 
     display: block;
 
-    width: 5vw;
-    height: 5vw;
-    margin-top: -1vw;
-    padding: 0;
+
+    padding-top: 20%;
 
     cursor: pointer;
 
@@ -67,15 +67,19 @@
 {
     /*font-family: 'FontAwesome';*/
     font-family: 'Exo';
-    font-size: 9vw;
+    font-size: 150px;
 
     text-shadow: 0px 2px 3px #666;
 
     font-weight: 100;
     line-height: 0.2;
 
+    opacity: .8;
 
-    opacity: .85;
+/*    background-color: rgba(25, 25, 25, .7);
+    color: rgba(25, 25, 25, .7);*/
+
+
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -84,11 +88,11 @@
 
 .slick-prev
 {
-    left: 2vw;
+    left: 0;
 }
 [dir='rtl'] .slick-prev
 {
-    right: 2vw;
+    right: 0;
     left: auto;
 }
 .slick-prev:before
@@ -104,12 +108,12 @@
 
 .slick-next
 {
-    right: 2vw;
+    right: 0;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: 2vw;
+    left: 0;
 }
 .slick-next:before
 {
@@ -127,19 +131,20 @@
 .slick-slider
 {
     margin-bottom: 30px;
+
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -18px;
+    bottom: -17px;
 
     display: block;
 
-    background-color: rgba(25, 25, 25, .7);
+/*    background-color: rgba(25, 25, 25, .7);
+    color: rgba(25, 25, 25, .7);*/
 
-    color: rgba(25, 25, 25, .7);
-
+    height: 50px;
     width: 100%;
     padding: 0;
 
@@ -151,12 +156,12 @@
 {
     position: relative;
 
-    bottom:-8px;
+
 
     display: inline-block;
 
     width: 20px;
-    height: 40px;
+    height: 20px;
     margin: 0 5px;
     padding: 0;
 
@@ -167,9 +172,9 @@
     font-size: 0;
     line-height: 0;
 
-
-
     display: block;
+
+
 
     width: 20px;
     height: 20px;
@@ -195,13 +200,16 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 8px;
     line-height: 20px;
 
 
+
     position: absolute;
-    top: 0;
+    top: 8px;
     left: 0;
+
+
 
     width: 20px;
     height: 20px;
@@ -209,7 +217,7 @@
     content: '•';
     text-align: center;
 
-    opacity: .4;
+    opacity: .5;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -217,6 +225,43 @@
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
+    opacity: 1;
     color: white;
+}
+
+
+/* iPhone 6 ----------- */
+@media only screen and (max-device-width: 667px)  {
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-size: 300px;
+
+}
+
+.slick-dots
+{
+    display: none;
+}
+
+}
+
+
+/* Desktop ----------- */
+@media only screen and (max-width: 667px)  {
+
+.slick-prev:before,
+.slick-next:before
+{
+    top:20%;
+    font-size: 150px;
+
+}
+
+.slick-dots
+{
+    display: none;
+}
+
 }

@@ -292,6 +292,9 @@ ul {
 	height: 7vw	;
 }
 
+.abstand-oben2 {
+	display: none;
+}
 
 .ueberbild {
 	position: relative;
@@ -1015,8 +1018,8 @@ figure.effect-ming:hover img {
 
 .slider {
 	margin: 0 auto;
-    padding: 0 10vw;
-    width: 100%;
+	padding: 0 10vw;
+	width: 100%;
 }
 
 /*---------------------------------------------------------
@@ -1108,6 +1111,9 @@ figure.effect-ming:hover img {
 
 	}
 
+	.unterliste2 {
+		display: none;
+	}
 
 
 	nav a {
@@ -1138,7 +1144,11 @@ figure.effect-ming:hover img {
 	}
 
 
-
+	.abstand-oben2 {
+		width:100%;
+		height: 102vw;
+		display: block;
+	}
 	/* hamburger menu --------------------------------- */
 
 
@@ -1450,7 +1460,7 @@ figure.effect-ming:hover img {
 		display: block;
 		margin-top: 4px;
 		width: 100%;
-		height: 470px;
+		height: 50vw;
 	}
 
 	.angaben-container h2 {
@@ -1597,10 +1607,617 @@ figure.effect-ming:hover img {
 		height: 40vw;
 	}
 
+	.slider {
+		margin: 0 auto;
+		padding: 0 0vw;
+		width: 100%;
 
+
+	}
 
 }
 
 
 
+
+
+/* Desktop ----------- */
+@media only screen and (max-width: 667px)  {
+
+
+
+	/* header menu --------------------------------- */
+
+	.wrapper {
+		width: 100%;
+	}
+
+
+	header {
+		z-index: 5000;
+		top:-10px;
+		height: 15vw !important;
+
+		-webkit-transition: top 0.5s ease-in-out;
+		transition: top 0.5s ease-in-out;
+	}
+
+	.nav-up {
+		top: -15vw; 
+	}
+
+
+	#logo{
+		font-family: 'source serif pro';
+
+		margin-left: 40%;
+
+		display:block;
+		letter-spacing: 2px;
+		font-weight: 200;
+	}
+
+
+
+
+
+
+
+	.unterliste2{
+
+
+
+		clear: both;
+
+		font-weight: 600;
+
+		opacity: 0;
+		
+		background: rgba(30,30,30,0.85);
+		
+		padding-top:50%;
+
+		width:100% !important;
+		height: 100% !important;
+
+		list-style: none;
+		position: fixed;
+
+		text-align: center;	
+
+		-webkit-transition:all 0.8s ease-in-out;
+		transition:all 0.8s ease-in-out;
+	}
+
+
+	.unterliste2 li {
+		text-align: center !important;
+		width: 100% !important;
+		margin: 2vw 0;
+		padding: auto 0;
+	}
+
+	.unterliste2 {
+		display: none;
+
+	}
+
+
+
+	.unterliste1	{
+		padding-top: 3vw;
+		z-index: 100;
+
+	}
+
+
+
+	nav a {
+		clear: both;
+		width: 100%;
+		text-decoration:none;
+		color: white;
+		font-size: 3.5vw;
+	}
+
+
+
+	nav a:hover {
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+
+	}
+
+	ul {
+		list-style: none;
+		position: fixed;
+		width:28%;
+	}
+
+
+	.uebertitel {
+		display:none;
+	}
+
+	.abstand-oben2 {
+		width:100%;
+		height: 102vw;
+		display: block;
+	}
+
+	/* hamburger menu --------------------------------- */
+
+
+
+	.c-hamburger {
+		clear: both;
+		right: 6vw;
+		float: right;
+		display: block;
+		position: fixed;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 8%;
+		height: 10%;
+		font-size: 0;
+		text-indent: -9999px;
+		appearance: none;
+		box-shadow: none;
+		border-radius: none;
+		border: none;
+		cursor: pointer;
+		transition: background 0.3s;
+		background-color: transparent !important;
+	}
+
+	.c-hamburger:focus {
+		outline: none;
+	}
+
+
+
+
+	.c-hamburger span {
+		display: block;
+		position: absolute;
+		top: 6vw;
+
+		width: 100%;
+		height: 0.4vw;
+		background: white;
+		-moz-border-radius:5px; /* Firefox */
+		-webkit-border-radius:5px; /* Chrome, Safari */
+		-khtml-border-radius:5px; /* Konqueror */
+		border-radius:5px; /
+	}
+
+	.c-hamburger span::before,
+	.c-hamburger span::after {
+		position: absolute;
+		display: block;
+		left: 0;
+		width: 100%;
+		height: 0.4vw;
+		background-color: #fff;
+		content: "";
+		-moz-border-radius:5px; /* Firefox */
+		-webkit-border-radius:5px; /* Chrome, Safari */
+		-khtml-border-radius:5px; /* Konqueror */
+		border-radius:5px; /
+	}
+
+	.c-hamburger span::before {
+		top: -1vw;
+	}
+
+	.c-hamburger span::after {
+		bottom: -1vw;
+	}
+
+
+
+
+
+
+
+	.c-hamburger--htx {
+		background-color: none;
+
+	}
+
+	.c-hamburger--htx span {
+		transition: background 0s 0.3s;
+	}
+
+	.c-hamburger--htx span::before,
+	.c-hamburger--htx span::after {
+		transition-duration: 0.3s, 0.3s;
+		transition-delay: 0.3s, 0s;
+	}
+
+	.c-hamburger--htx span::before {
+		transition-property: top, transform;
+	}
+
+	.c-hamburger--htx span::after {
+		transition-property: bottom, transform;
+	}
+
+	/* active state, i.e. menu open */
+	.c-hamburger--htx.is-active {
+		background-color: none;
+	}
+
+	.c-hamburger--htx.is-active span {
+		background: none;
+	}
+
+	.c-hamburger--htx.is-active span::before {
+		top: 0;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	.c-hamburger--htx.is-active span::after {
+		bottom: 0;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+
+	.c-hamburger--htx.is-active span::before,
+	.c-hamburger--htx.is-active span::after {
+		transition-delay: 0s, 0.3s;
+	}
+
+	/* start main --------------------------------- */
+
+	.inhalt {
+		height: 200vw;
+	}
+
+
+
+	.button {
+		display: none;
+	}
+
+	.button-wrapper {
+		display: none;
+	}
+
+	.main-navigation{
+		display: none; 	
+	}
+
+
+
+	.bgimage {
+		overflow:hidden;
+		height: 100%;
+		width: 100%;
+
+	}
+
+	.bgimage img {
+
+		object-fit: cover;
+	}
+
+
+	.uebertitel h1 {
+
+
+	}
+
+	/* Unterseiten Main --------------------------------- */
+
+	.inhalt-unterseiten{
+		width: 100%;
+	}
+
+	.text {
+		width: 100%;
+		padding: 0vw 1vw;
+	}
+
+	.uebertext-titel h1 {
+		padding: 3vw 1vw;	
+		padding-bottom: 1vw;
+
+		font-weight: 600;
+		font-size: 4vw;
+		line-height: 2vw;
+		color: #9E9E9E;
+	}
+
+	.uebertext p {
+		width: 100%;
+		padding: 1vw 1vw;
+		text-align: left;
+		font-size: 3vw;
+		line-height: 3.5vw;
+		font-weight: 300;
+		column-count: 1;
+		column-rule: 0px choose #000000;
+		-moz-column-count: 1;
+		-moz-column-rule: 0px choose #000000;
+		-webkit-column-count: 1;
+		-webkit-column-rule: 0px choose #000000;
+		-o-column-count: 1;
+		-o-webkit-column-rule: 0px choose #000000;
+		-ms-column-count: 1;
+		-ms-column-rule: 0px choose #000000;
+	}
+
+	.kontakt-text>p {
+		width: 50%;
+		padding-bottom: 1vw;
+		text-align: left;
+		font-size: 1.3vw;
+		line-height: 1.6vw;	
+	}
+
+	/* Unser-Bauernhof Untermenu --------------------------------- */
+
+	.grid figure {
+		padding: 0;
+		width: 100%;
+		padding-bottom: 0vw;
+
+	}
+
+
+	.grid figure h2 {
+		padding-top: 25vw;
+		word-spacing: 0.15vw;
+		font-weight: 600;
+		font-size: 6.5vw;
+
+	}
+
+
+
+	.grid figure h2,
+	.grid figure p {
+		margin: 0;
+	}
+
+	.grid figure .mehr {
+		opacity: 1;
+		letter-spacing: 2px;
+		font-size: 2.5vw;
+		visibility: visible;
+		font-weight: 300;
+	}
+
+	figure.effect-ming img {
+		opacity: 0.6;
+	}
+
+
+
+
+	.beschriftung {
+		display: none;
+	}
+
+	/* Zitat --------------------------------- */
+
+	.zitat {
+		text-align: center;
+		color: #9E9E9E;
+		padding: 1vw;
+		margin-top: 4vw;
+	}
+
+	.zitat h1 {
+		font-weight: 400;
+		font-style: italic;
+		font-size: 3vw;
+		line-height: 3vw;
+
+
+	}
+
+	.zitat h6 {
+		font-weight: 400;
+		font-size: 2vw;
+		line-height: 1.3vw;
+		margin-top: 0vw;
+		padding-top: 1vw;
+	}
+
+
+	/* Über uns Portraits Sektion --------------------------------- */
+
+	.abstand-oben {
+		height: 18vw;
+		width: 100%;
+	}
+
+	.portraits-container {
+
+		flex-direction: column;		
+		-webkit-flex-direction: column;	
+	}
+
+	.img-container{
+		flex-direction: column;		
+		-webkit-flex-direction: column;	
+		display: block;
+
+		width: 100%;
+	}
+
+	.angaben-container {
+		flex-direction: column;		
+		-webkit-flex-direction: column;	
+		display: block;
+		margin-top: 4px;
+		width: 100%;
+		height: 50vw;
+	}
+
+	.angaben-container h2 {
+		font-weight: 600;
+		font-size: 5vw;
+		position:relative; 
+		margin-top: 10%;
+		opacity: 1;
+	}
+
+	.angaben-container p {
+
+		display: block;
+		clear: both;
+		font-size: 3vw;
+		line-height: 0px;
+		position:relative; 
+		margin-top: 1vw;
+		opacity: 1;
+	}
+
+	/* Hoflädeli --------------------------------- */
+
+	.text h3 {
+		padding-top: 3vw; 
+		font-size: 3vw;
+	}
+
+
+	.oeffnungszeiten {
+		padding: 1vw 1vw 3vw;
+	}
+
+	.oeffnungszeiten p {
+		text-align: left;
+		font-size: 2vw;
+		line-height: 7vw;
+
+	}
+
+
+	/* Anfragen -> Events & Hoflaedeli --------------------------------- */
+
+
+	.anfragen {
+		padding: 1vw 1vw 3vw;
+		text-align: center;
+	}
+
+	.anfragen h3 {
+		padding: 3vw 0;
+		font-size: 5.5vw;
+		text-decoration: none;
+	}
+
+	.anfragen a {
+		padding-bottom: 4vw;
+		font-size: 3vw;
+		text-decoration: none;
+	}
+
+	/* Kontakt --------------------------------- */
+
+	.kontakt-submit-info{
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+	.grau-container-kontakt {  
+		position: static;
+		padding: 2vw 0vw 5vw; /*wieso??*/
+		width:100%;
+		height: 100%;
+		background: #EEEEEE;
+	}
+
+
+	.adresse {
+		text-align: left;
+		width: 100%;
+		font-size: 3vw;
+		padding: 0vw 4vw 4vw; /*wieso??*/
+		font-weight: 300;
+
+	}
+
+	.kontakt-text p {
+		width: 100%;
+		padding: 1vw 1vw;
+		text-align: left;
+		font-size: 3vw;
+		line-height: 7vw;
+		font-weight: 300;
+		list-style: none;
+		text-decoration:none;
+
+	}
+
+	/* Form --------------------------------- */
+
+
+
+	.form-style-6{		/*noch unklar ob es hier wirklich eine form braucht*/
+		font-size: 6vw;
+		line-height: 7vw;
+		width: 100%;
+		padding: 3vw 4vw 3vw 4vw;
+
+
+		display: none;
+
+
+
+	}
+
+	.form-style-6 input[type="text"],
+	.form-style-6 input[type="date"],
+	.form-style-6 input[type="datetime"],
+	.form-style-6 input[type="email"],
+	.form-style-6 input[type="number"],
+	.form-style-6 input[type="search"],
+	.form-style-6 input[type="time"],
+	.form-style-6 input[type="url"],
+	.form-style-6 textarea,
+	.form-style-6 select {
+		margin-bottom: 2vw;
+		padding: 6vw;
+		position: relative;
+	}
+
+
+
+
+	.form-style-6 input[type="submit"],
+	.form-style-6 input[type="button"]{
+		padding: 6vw;
+		position: relative;
+
+	}
+
+	textarea {
+		height: 40vw;
+	}
+
+	.slider {
+		margin: 0 auto;
+		padding: 0 0vw;
+		width: 100%;
+
+		.slick-prev:before,
+		.slick-next:before
+		{
+			top:20%;
+			font-size: 150px;
+
+		}
+
+		.slick-dots
+		{
+			display: none;
+		}
 
