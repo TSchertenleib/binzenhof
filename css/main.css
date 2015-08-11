@@ -1037,14 +1037,14 @@ figure.effect-ming:hover img {
 
 .slider {
 
-/*	padding: 0 10vw ;*/
+	/*	padding: 0 10vw ;*/
 	width: 80%;
 	margin: 0 10vw ;
 }
 
 
 .tiere-ueberflex {
-/*	padding: 0 10vw ;*/
+	/*	padding: 0 10vw ;*/
 	width: 80%;
 	margin: 0 10vw ;
 }
@@ -1078,8 +1078,8 @@ figure.effect-ming:hover img {
 	-ms-transition:all 0.4s ease-in-out;
 	transition:all 0.4s ease-in-out;
 	position: absolute;
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .mask2:hover {
@@ -1088,11 +1088,7 @@ figure.effect-ming:hover img {
 
 .slider-titel {
 	display: none;
-	font-weight: 600;
-	position: absolute;
 	color: white;
-	left:35%;
-	top:20%;
 }
 
 /*---------------------------------------------------------
@@ -2276,11 +2272,47 @@ figure.effect-ming:hover img {
 		height: 40vw;
 	}
 
+
+
+	.tiere-ueberflex {
+		/*	padding: 0 10vw ;*/
+		width: 100%;
+		margin: 0 0vw ;
+		top: -6vw;
+
+	}
+
+	.tiere-flex img {
+		display: none;
+	}
+
+	.mask2 {
+		display: none;
+	}
+
+	.slider-titel {
+		top: -6vw;
+		opacity: 0.7;
+		position: relative;
+		display: block;
+		color: white;
+		padding: 1vw;
+		margin: 0vw;
+		background-color: black;
+		font-weight: 100;
+		border-bottom: 1px solid black;
+		border-left: 1px solid white;
+
+	}
+
+
 	.slider {
 		margin: 0 auto;
 		padding: 0 0vw;
 		width: 100%;
+			display:-ms-flex;
 
+	}
 		.slick-prev:before,
 		.slick-next:before
 		{
@@ -2294,3 +2326,8 @@ figure.effect-ming:hover img {
 			display: none;
 		}
 
+		.aussendiv .abstand-oben {
+			display: none;
+		}
+
+	}

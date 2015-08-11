@@ -256,7 +256,6 @@
 {
     top:20%;
     font-size: 150px;
-
 }
 
 .slick-dots
@@ -266,13 +265,22 @@
 .slick-prev,
 .slick-next
 {
-
     top: 15%;
-
-
-
     padding-top: 18%;
+}
 
+.slider {
+
+/*  padding: 0 10vw ;*/
+    width: 100%;
+    margin: 0 vw ;
+}
+
+
+.tiere-ueberflex {
+/*  padding: 0 10vw ;*/
+    width: 100%;
+    margin: 0 0vw ;
 }
 
 
