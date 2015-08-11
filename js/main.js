@@ -100,7 +100,7 @@ $('.button').hover(function() {
   $('.inhalt').addClass('start-effect');
   $('.bgimage').addClass('img-zoom');
   $('.uebertitel').stop(true, false).fadeIn('slow');
-
+  $('.unterliste2').css("display", "none");
 }, function() {
   $('.inhalt').removeClass('start-effect');
   $('.bgimage').removeClass('img-zoom');

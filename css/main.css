@@ -1016,10 +1016,83 @@ figure.effect-ming:hover img {
 --------------------- Slider ------------------------------
 ----------------------------------------------------------*/
 
-.slider {
-	margin: 0 auto;
-	padding: 0 10vw;
+
+.slider-container {
 	width: 100%;
+	height: 100%;
+
+	display:-ms-flex;
+	display:-o-flex;
+	display:-moz-flex;
+	display:-webkit-flex;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.slider {
+
+/*	padding: 0 10vw ;*/
+	width: 80%;
+	margin: 0 10vw ;
+}
+
+
+.tiere-ueberflex {
+/*	padding: 0 10vw ;*/
+	width: 80%;
+	margin: 0 10vw ;
+}
+
+
+
+.thumb img {
+	float: left;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	width: 100%;
+
+}
+
+.thumb {
+	float: left;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	width: 14.28571428571499%;
+
+}
+
+.mask2 {
+	background-color: rgba(20, 20, 20, 0.7);
+	opacity: 1;
+	-moz-transition:all 0.4s ease-in-out;
+	-webkit-transition:all 0.4s ease-in-out;
+	-o-transition:all 0.4s ease-in-out;
+	-ms-transition:all 0.4s ease-in-out;
+	transition:all 0.4s ease-in-out;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mask2:hover {
+	opacity: 0;
+}
+
+.slider-titel {
+	display: none;
+	font-weight: 600;
+	position: absolute;
+	color: white;
+	left:35%;
+	top:20%;
 }
 
 /*---------------------------------------------------------
