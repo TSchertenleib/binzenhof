@@ -672,7 +672,17 @@ textarea {
 	height: 10vw;
 }
 
-
+.antwort {
+	padding: 1vw 1vw ;
+	margin: 0vw 10vw 2vw;
+	width: 43.5%;
+	font-weight: 100;
+	font-size: 1.6vw;
+	line-height: 2vw;
+	color: white;
+	background-color: #4A89DC;
+	border-radius: 3px;
+}
 
 /* Zitat --------------------------------- */
 
@@ -1092,6 +1102,12 @@ figure.effect-ming:hover img {
 .slider-titel {
 	display: none;
 	color: white;
+}
+
+.mail {
+	text-decoration:none;
+	font-weight: 600;
+	color: black;
 }
 
 /*---------------------------------------------------------
@@ -1644,7 +1660,9 @@ figure.effect-ming:hover img {
 
 	/* Form --------------------------------- */
 
-
+	.antwort {
+		display: none;
+	}
 
 	.form-style-6{		/*noch unklar ob es hier wirklich eine form braucht*/
 		font-size: 6vw;
@@ -2321,7 +2339,7 @@ figure.effect-ming:hover img {
 		padding: 1vw 1vw;
 		text-align: left;
 		font-size: 3vw;
-		line-height: 7vw;
+		line-height: 3.5vw;
 		font-weight: 300;
 		list-style: none;
 		text-decoration:none;
@@ -2330,19 +2348,31 @@ figure.effect-ming:hover img {
 
 	/* Form --------------------------------- */
 
+/*    .antwort {
+    	padding: 0vw 0vw;
+		width: 80%;
+		font-size: 4vw;
+		line-height: 36px;
+	}*/
 
+.antwort {
+	text-align: center;
+	padding: 1vw 1vw ;
+	margin: 1vw 10vw 2vw;
+	width: 80%;
+
+		font-size: 4vw;
+		line-height: 5vw;
+
+
+}
 
 	.form-style-6{		/*noch unklar ob es hier wirklich eine form braucht*/
 		font-size: 6vw;
 		line-height: 7vw;
 		width: 100%;
 		padding: 3vw 4vw 3vw 4vw;
-
-
 		display: none;
-
-
-
 	}
 
 	.form-style-6 input[type="text"],

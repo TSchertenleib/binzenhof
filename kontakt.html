@@ -60,10 +60,13 @@
 
 					<div class="form-style-6">
 
-						<form>
-							<input type="text" name="field1" placeholder="Dein Name" />
-							<input type="email" name="field2" placeholder="Deine Email Addresse" />
-							<textarea name="field3" placeholder="Schreibe uns eine Nachricht ..."></textarea>
+						<form method="POST" name="contactform" action="contact-form-handler.php">
+							<label for='name'></label>
+							<input type="text" name="name" placeholder="Dein Name" />
+							<label for='email'></label>
+							<input type="text" name="email" placeholder="Deine Email Addresse" />
+							<label for='message'></label> <br>
+							<textarea name="message" placeholder="Schreibe uns eine Nachricht ..."></textarea>
 							<input type="submit" value="Send" />
 						</form>
 					</div>
@@ -80,7 +83,7 @@
 						062/ 823 17 28</br></br>
 
 						<strong>Mail:</strong></br>
-						 <a href="info@binzenhof.ch"></a>info@binzenhof.ch</br>
+						 <a class="mail" href="mailto:thomas.schertenleib@gmail.com?Subject=Binzenhof" target="_top">info@binzenhof.ch</a>
 					</p>
 					</div>
 				</div>
@@ -152,7 +155,7 @@
 	</main>
 
 	<script src="js/jquery-2.1.1.min.js"></script>
- 
+ 	<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
 	<script src="js/main.js"></script>
 
 	<script src="https://maps.googleapis.com/maps/api/js"></script>

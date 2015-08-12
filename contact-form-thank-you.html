@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Binzenhof</title>
+	<link rel="stylesheet" href="css/normalize.css">
+   
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,600italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+<body>
+
+	<main class="wrapper">
+		<header>
+			<div id="start-navibackground">
+				<nav id="logo">
+					<ul class="unterliste1">
+						<li><a href="index.html">BINZENHOF</a></li>
+					</ul>
+				</nav>				  
+				<nav id="start-navigation">
+					<ul class="unterliste2">
+						<li><a href="unser-bauernhof.html">Unser Bauernhof</a></li>
+						<li><a href="events.html">Events</a></li>					<li><a href="laedeli.html">Hoflädeli</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>	
+					</ul>
+				</nav>
+				<button class="c-hamburger c-hamburger--htx">
+					<span>toggle menu</span>
+				</button>
+			</div>
+		</header>
+		
+		<section class="inhalt-unterseiten">
+
+
+
+			<div id="map-canvas"></div>
+
+			<div class="text">
+				<div class="uebertext-titel">
+					<h1>Kontakt</h1>
+				</div>
+				<div class="kontakt-text">
+					<p>Bei Fragen, Bestellungen oder Anfragen für Events können sie mit uns über die unten aufgeführete Telefonnummer telefonieren oder uns eine Nachricht schicken.</p>
+				</div>
+			</div>
+
+
+			<div class="slider">
+
+				<div class="grau-container-kontakt">
+					<h1 class="antwort">Vielen Dank für ihre Mail! Wir werden ihnen so schnell wie möglich antworten.</h1>
+					<div class="form-style-6">
+
+						<form method="POST" name="contactform" action="contact-form-handler.php">
+							<label for='name'></label>
+							<input type="text" name="name" placeholder="Dein Name" />
+							<label for='email'></label>
+							<input type="text" name="email" placeholder="Deine Email Addresse" />
+							<label for='message'></label> <br>
+							<textarea name="message" placeholder="Schreibe uns eine Nachricht ..."></textarea>
+							<input type="submit" value="Send" />
+						</form>
+					</div>
+					<div class="adresse">
+					<p>
+						<strong>Adresse:</strong></br>
+						Landhausweg 19, 
+						5000 Aarau</br></br>
+
+						<strong>Mit der ÖV:</strong></br>
+						Mit ÖV ab Bahnhof SBB mit der AAR (WSB) Tram bis Haltestelle Distelberg (1Min. zu Fuss)</br></br>
+						
+						<strong>Telefon:</strong></br>
+						062/ 823 17 28</br></br>
+
+						<strong>Mail:</strong></br>
+						 <a class="mail" href="mailto:thomas.schertenleib@gmail.com?Subject=Binzenhof" target="_top">info@binzenhof.ch</a>
+					</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="zitat">
+				<h1>„Unsere ganze Familie und alle unsere Angestellten freuen sich darauf Sie auf dem Binzenhof verwöhnen zu dürfen.“</h1>
+				<h6>Susanne Knörr</h6>
+			</div>
+
+
+
+
+		</section>
+
+		<section class="main-navigation">
+			<div class="nav-container">
+				<div class="flex-container1">
+
+					<div class="view effect">
+						<a href="unser-bauernhof.html"><img src="media/images/unser_bauernhof_nav.png" alt="Unser Bauernhof">
+							<h1 class="navigation-title">Unser Bauernhof</h1>
+							<div class="mask">
+							</div>
+						</a>
+					</div>
+
+					<div class="view effect">
+						<a href="events.html"><img src="media/images/events_nav.png" alt="Events">
+							<h1 class="navigation-title">Events</h1>
+							<div class="mask">
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="flex-container2">
+					<div class="view effect">
+						<a href="laedeli.html"><img src="media/images/laedeli_nav.png" alt="Hoflädeli">
+							<h1 class="navigation-title">Hoflädeli</h1>
+							<div class="mask">
+							</div>
+						</a>
+					</div>
+
+					<div class="view effect">
+						<a href="kontakt.html"><img src="media/images/kontakt_nav.png" alt="Kontakt">
+							<h1 class="navigation-title">Kontakt</h1>
+							<div class="mask">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+	</main>
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+ 	<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+	<script type='text/javascript' id="__bs_script__">
+	document.write("<script async src='http://http://127.0.0.1/webdev/secure_001/:3000/browser-sync/browser-sync-client.2.2.1.js'><\/script>".replace("http://127.0.0.1/webdev/secure_001/", location.hostname));
+	</script>
+
+
+</body>
+</html>
