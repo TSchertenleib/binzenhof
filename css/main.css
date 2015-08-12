@@ -1469,6 +1469,9 @@ figure.effect-ming:hover img {
 	}
 
 
+	.grau-container {
+		background-color: transparent;
+	}
 
 
 	.beschriftung {
@@ -1862,6 +1865,11 @@ figure.effect-ming:hover img {
 		width:100%;
 		height: 102vw;
 		display: block;
+	}
+
+
+	.grau-container {
+		background-color: transparent;
 	}
 
 	/* hamburger menu --------------------------------- */
