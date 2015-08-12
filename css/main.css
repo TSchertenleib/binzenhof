@@ -1016,11 +1016,13 @@ figure.effect-ming:hover img {
 --------------------- Slider ------------------------------
 ----------------------------------------------------------*/
 
+.tiere-container {
+
+}
 
 .slider-container {
 	width: 100%;
 	height: 100%;
-
 	display:-ms-flex;
 	display:-o-flex;
 	display:-moz-flex;
@@ -1033,6 +1035,7 @@ figure.effect-ming:hover img {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
+
 }
 
 .slider {
@@ -1065,7 +1068,7 @@ figure.effect-ming:hover img {
 	position: relative;
 	text-align: center;
 	cursor: default;
-	width: 14.28571428571499%;
+	width: 12.5%;
 
 }
 
@@ -1686,13 +1689,62 @@ figure.effect-ming:hover img {
 	}
 
 
+	/*--------- slider --------------- */
+
+	.slider-container {
+		position: relative;
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+	}
+
+	.tiere-container {
+		position: relative;
+		margin-top:0;
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+	}
+
 	.tiere-ueberflex {
+		position: static;
 		/*	padding: 0 10vw ;*/
 		width: 100%;
 		margin: 0 0vw ;
-		top: -6vw;
-
+		display: felx;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
 	}
+
+
+
+	.thumb {
+		width: 25%;
+	}
+
+
 
 	.tiere-flex img {
 		display: none;
@@ -1702,40 +1754,45 @@ figure.effect-ming:hover img {
 		display: none;
 	}
 
-
 	.slider-titel {
-/*		top: -12.2vw;*/
+		top: 0;
 		opacity: 0.7;
+		filter: alpha(opacity=70);
 		position: relative;
 		display: block;
 		color: white;
-		padding: 3vw .3vw;
+		padding: 1vw;
 		margin: 0vw;
-		background-color: black;
+		background-color:  #9E9E9E;
 		font-weight: 100;
-		font-size: 5vw;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid white;
 		border-left: 1px solid white;
+/*		border-top: 1px solid white;*/
 	}
-
 
 	.slider {
 		margin: 0 auto;
 		padding: 0 0vw;
 		width: 100%;
-
+		display:-ms-flex;
+		position: relative;
+	}
+	.slick-prev:before,
+	.slick-next:before
+	{
+		top:20%;
+		font-size: 150px;
 
 	}
 
+	.slick-dots
+	{
+		display: none;
+	}
 
-		.slick-dots
-		{
-			display: none;
-		}
-
-		.aussendiv .abstand-oben {
-/*			display: none;*/
-		}
+	.aussendiv .abstand-oben {
+		display: none;
+	}
 
 }
 
@@ -1786,27 +1843,16 @@ figure.effect-ming:hover img {
 
 
 	.unterliste2{
-
-
-
 		clear: both;
-
 		font-weight: 600;
-
 		opacity: 0;
-		
 		background: rgba(30,30,30,0.85);
-		
 		padding-top:50%;
-
 		width:100% !important;
 		height: 100% !important;
-
 		list-style: none;
 		position: fixed;
-
 		text-align: center;	
-
 		-webkit-transition:all 0.8s ease-in-out;
 		transition:all 0.8s ease-in-out;
 	}
@@ -1821,7 +1867,6 @@ figure.effect-ming:hover img {
 
 	.unterliste2 {
 		display: none;
-
 	}
 
 
@@ -1829,7 +1874,6 @@ figure.effect-ming:hover img {
 	.unterliste1	{
 		padding-top: 3vw;
 		z-index: 100;
-
 	}
 
 
@@ -2332,13 +2376,59 @@ figure.effect-ming:hover img {
 
 
 
+	/*--------- slider --------------- */
+
+
+	.slider-container {
+		position: relative;
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.tiere-container {
+		position: relative;
+		margin-top:0;
+		display:-ms-flex;
+		display:-o-flex;
+		display:-moz-flex;
+		display:-webkit-flex;
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
 	.tiere-ueberflex {
+		position: static;
 		/*	padding: 0 10vw ;*/
 		width: 100%;
 		margin: 0 0vw ;
-		top: -6vw;
-
+		display: felx;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
 	}
+
+
+
+	.thumb {
+		width: 25%;
+	}
+
+
 
 	.tiere-flex img {
 		display: none;
@@ -2349,43 +2439,42 @@ figure.effect-ming:hover img {
 	}
 
 	.slider-titel {
-		top: -6vw;
+		top: 0;
 		opacity: 0.7;
 		position: relative;
 		display: block;
 		color: white;
 		padding: 1vw;
 		margin: 0vw;
-		background-color: black;
+		background-color:  #9E9E9E;
 		font-weight: 100;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid white;
 		border-left: 1px solid white;
-
+/*		border-top: 1px solid white;*/
 	}
-
 
 	.slider {
 		margin: 0 auto;
 		padding: 0 0vw;
 		width: 100%;
-			display:-ms-flex;
+		display:-ms-flex;
+		position: relative;
+	}
+	.slick-prev:before,
+	.slick-next:before
+	{
+		top:20%;
+		font-size: 150px;
 
 	}
-		.slick-prev:before,
-		.slick-next:before
-		{
-			top:20%;
-			font-size: 150px;
 
-		}
-
-		.slick-dots
-		{
-			display: none;
-		}
-
-		.aussendiv .abstand-oben {
-			display: none;
-		}
-
+	.slick-dots
+	{
+		display: none;
 	}
+
+	.aussendiv .abstand-oben {
+		display: none;
+	}
+
+}

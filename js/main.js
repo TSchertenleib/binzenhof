@@ -187,6 +187,9 @@ $('.button').hover(function() {
     });
 
 
+
+    // google maps intergration
+
     function initialize() {
       var mapCanvas = document.getElementById('map-canvas');
       var mapOptions = {
