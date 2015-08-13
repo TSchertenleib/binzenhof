@@ -1108,6 +1108,7 @@ figure.effect-ming:hover img {
 	text-align: center;
 	cursor: default;
 	width: 12.5%;
+	border-left: 1px solid rgba(150, 150, 150, 0.2);
 }
 
 
@@ -1129,9 +1130,16 @@ figure.effect-ming:hover img {
 }
 
 .slider-titel {
-	display: none;
+	width: 100%;
+	position: absolute;
+	padding-top: auto;
+	text-align: center;
+/*	display: none;*/
 	color: white;
+	font-weight: 200;
+
 }
+
 
 .mail {
 	text-decoration:none;
