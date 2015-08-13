@@ -154,26 +154,43 @@ $('.button').hover(function() {
 
     })();
 
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("name","req","Please provide your name"); 
-frmvalidator.addValidation("email","req","Please provide your email"); 
-frmvalidator.addValidation("message","email","Please enter a valid email address"); 
-
-    // $(".c-hamburger").on('click', function(e) {
-    //   $('.unterliste2').css('opacity', function(i,o){
-    //     return parseFloat(o).toFixed(1) === '0.0' ? 1 : 0.0;
-    //   });
-
-    // });
-
-// $('.unterliste2').is(':hidden') ? $('.unterliste2').show() : $('.unterliste2').hide();
 
 
+    // multiple galleries
+
+
+
+  var $siteSlider = $(".site-slider"),
+        $sliderTitle = $(".thumb");
+
+    $siteSlider.first().addClass('is-active');
+
+
+    $sliderTitle.each(function() {
+        var $this = $(this),
+            sliderId = $this.attr("data-sliderId"),
+            $targetEl = $("#" + sliderId);
+
+        $this.on("click", function() {
+            // $title.removeClass("selected");
+            // $this.addClass("selected");
+            $siteSlider.removeClass("is-active");
+            $targetEl.addClass("is-active");
+            console.log("this: "+ $this,"sliderId "+ sliderId);
+        });
+    });
+
+
+// $(".thum").on("click", function() {
+//         var sliderId = $(this).attr("data-sliderId");
+//         $(".site-slider").removeClass("active");
+//         $("#" + sliderId).addClass("active");
+//     });
 
     // slick slider
 
-    $('.kuehe-slider').slick({
-      dots: true,
+    $('.site-slider').slick({
+      dots: false,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
@@ -183,46 +200,52 @@ frmvalidator.addValidation("message","email","Please enter a valid email address
     
 
     $('.next-button-slick').click(function(){
-      $('.kuehe-slider').slickNext();
+      $('.site-slider').slickNext();
     });
     $('.prev-button-slick').click(function(){
-      $('.kuehe-slider').slickPrev();
+      $('.site-slider').slickPrev();
     });
+
+
+  
 
 
 
     // google maps intergration
 
-    function initialize() {
-      var mapCanvas = document.getElementById('map-canvas');
-      var mapOptions = {
-        center: new google.maps.LatLng(47.378237, 8.0470636),
-        zoom: 18,
-        mapTypeId: google.maps.MapTypeId.ROADMAP 
-          //ROADMAP HYBRID TERRAIN SATELLITE
-        }
-        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+   //  function initialize() {
+   //    var mapCanvas = document.getElementById('map-canvas');
+   //    var mapOptions = {
+   //      center: new google.maps.LatLng(47.378237, 8.0470636),
+   //      zoom: 18,
+   //      mapTypeId: google.maps.MapTypeId.ROADMAP 
+   //        //ROADMAP HYBRID TERRAIN SATELLITE
+   //      }
+   //      map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-        var myIcon='https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-128.png';
-        var marker = new google.maps.Marker({ position: {lat:47.378237, lng:8.0470636}, map: map, icon: myIcon, optimized:false });
-        console.log('hallo');
-      // var marker = new google.maps.Marker({
-      //   map: map,position: new google.maps.LatLng(47.378237, 8.047063600000001)});
+   //      var myIcon='https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-128.png';
+   //      var marker = new google.maps.Marker({ position: {lat:47.378237, lng:8.0470636}, map: map, icon: myIcon, optimized:false });
+   //      console.log('hallo');
+   //    // var marker = new google.maps.Marker({
+   //    //   map: map,position: new google.maps.LatLng(47.378237, 8.047063600000001)});
 
-     // I create an OverlayView, and set it to add the "markerLayer" class to the markerLayer DIV
-     // var myoverlay = new google.maps.OverlayView();
+   //   // I create an OverlayView, and set it to add the "markerLayer" class to the markerLayer DIV
+   //   // var myoverlay = new google.maps.OverlayView();
 
-     myoverlay.draw = function () {
-       this.getPanes().markerLayer.id='markerLayer';
-     };
-     // myoverlay.setMap(map);
+   //   myoverlay.draw = function () {
+   //     this.getPanes().markerLayer.id='markerLayer';
+   //   };
+   //   // myoverlay.setMap(map);
 
-   }
-   google.maps.event.addDomListener(window, 'load', initialize);
-
-
+   // }
+   // google.maps.event.addDomListener(window, 'load', initialize);
 
 
+// form
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
 
     // blur background of an element
     // $('.button').blurjs({

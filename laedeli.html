@@ -5,11 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Binzenhof</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/slick.css">    
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	// Add the new slick-theme.css if you want the default styling
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,600italic,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
-
+	<link href='http://fonts.googleapis.com/css?family=Exo:100' rel='stylesheet' type='text/css'>
 
 
 
@@ -57,10 +59,16 @@
 						</p>
 					</div>
 
-					<div class""slider-container>
+					<div class="slider-container">	
+							<div class="site-slider active">
+								<div><img src="media/slider/laedeli/laedeli.jpg"/>
+								</div>
+								<div><img src="media/slider/laedeli/laedeli2.jpg"/></div>
+								<div><img src="media/slider/laedeli/laedeli3.jpg"/></div>
+							</div>
+					</div>		
 
-					</div>
-					
+
 					<div class="oeffnungszeiten">
 						<p>Mittwoch 15 bis 18.30 Uhr Freitag 15 bis 18.30 Uhr Selbstbedienungs-Kühlschrank mit Eiern, Milch, Joghurt, Wurstwarentäglich bis 20 Uhr
 						</p>
@@ -126,19 +134,20 @@
 
 
 
-				</main>
+	</main>
 
-				<script src="js/jquery-2.1.1.min.js"></script>
-  
-				<script src="js/main.js"></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
 
-
+	<script src="js/main.js"></script>
 
 
-				<script type='text/javascript' id="__bs_script__">
-				document.write("<script async src='http://http://127.0.0.1/webdev/secure_001/:3000/browser-sync/browser-sync-client.2.2.1.js'><\/script>".replace("http://127.0.0.1/webdev/secure_001/", location.hostname));
-				</script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script type='text/javascript' id="__bs_script__">
+	document.write("<script async src='http://http://127.0.0.1/webdev/secure_001/:3000/browser-sync/browser-sync-client.2.2.1.js'><\/script>".replace("http://127.0.0.1/webdev/secure_001/", location.hostname));
+	</script>
 
 
-			</body>
-			</html>
+</body>
+</html>

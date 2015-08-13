@@ -5,11 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Binzenhof</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/slick.css">    
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	// Add the new slick-theme.css if you want the default styling
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>  
+
 	<link rel="stylesheet" href="css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,600italic,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
-
+	<link href='http://fonts.googleapis.com/css?family=Exo:100' rel='stylesheet' type='text/css'>
 
 
 
@@ -39,7 +43,7 @@
 		
 		<section class="inhalt-unterseiten">
 			<div>
-			<img class="ueberbild" src="media/images/ueberbild_unser_bauernhof.png" alt="Start">
+				<img class="ueberbild" src="media/images/ueberbild_unser_bauernhof.png" alt="Start">
 			</div>
 			<section class="text">
 				<div class="uebertext-titel">
@@ -51,33 +55,32 @@
 			</section>
 
 
-				<div class="grid">
-					<figure class="effect-ming">
-						<img src="media/images/ueber_uns.png" alt="Über uns"/>
-						<figcaption>
-							<h2>Über Uns</h2>
-							<p class="beschriftung">Auf dem Binzenhof leben und arbeiten </br> wir im Einklang mit der Natur.</p>
-							<p class="mehr">KLICKEN,</br>UM MEHR ZU ERFAHREN</p>
-							<a href="ueber-uns.html">Mehr erfahren</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-ming">
-						<img src="media/images/unsere_tiere.png" alt="Unsere Tiere"/>
-						<figcaption>
-							<h2>Unsere Tiere</h2>
-							<p class="beschriftung">Jedes unserer Tiere soll ein glückliches</br> und schönes Leben haben.</p>
-							<p class="mehr">KLICKEN,</br>UM MEHR ZU ERFAHREN</p>
+			<div class="grid">
+				<figure class="effect-ming">
+					<img src="media/images/ueber_uns.png" alt="Über uns"/>
+					<figcaption>
+						<h2>Über Uns</h2>
+						<p class="beschriftung">Auf dem Binzenhof leben und arbeiten </br> wir im Einklang mit der Natur.</p>
+						<p class="mehr">KLICKEN,</br>UM MEHR ZU ERFAHREN</p>
+						<a href="ueber-uns.html">Mehr erfahren</a>
+					</figcaption>			
+				</figure>
+				<figure class="effect-ming">
+					<img src="media/images/unsere_tiere.png" alt="Unsere Tiere"/>
+					<figcaption>
+						<h2>Unsere Tiere</h2>
+						<p class="beschriftung">Jedes unserer Tiere soll ein glückliches</br> und schönes Leben haben.</p>
+						<p class="mehr">KLICKEN,</br>UM MEHR ZU ERFAHREN</p>
 
-							<a href="unsere-tiere.html">Mehr erfahren</a>
-						</figcaption>			
-					</figure>
-				</div>
+						<a href="unsere-tiere.html">Mehr erfahren</a>
+					</figcaption>			
+				</figure>
+			</div>
 
 
 			<div class="abstand-oben2"></div>
-
-				<div class="zitat">
-					<h1>„Das Bauern ist eine Berufung. Wenn man das nicht lieben würde, würde 
+			<div class="zitat">
+				<h1>„Das Bauern ist eine Berufung. Wenn man das nicht lieben würde, würde 
 					man es nicht tun.“</h1>
 					<h6>Susanne Knörr</h6>
 				</div>
@@ -111,6 +114,32 @@
 						<h6>Susanne Knörr</h6>
 					</section> -->
 
+
+
+					<div class="slider-container">	
+						<div class="grau-container">
+							<div class="slider">
+								<div class="site-slider active">
+									<div><img src="media/slider/unser_hof/1.jpg"/>
+									</div>
+									<div><img src="media/slider/unser_hof/2.jpg"/></div>
+									<div><img src="media/slider/unser_hof/3.jpg"/></div>
+									<div><img src="media/slider/unser_hof/4.jpg"/></div>
+									<div><img src="media/slider/unser_hof/5.jpg"/>
+									</div>
+									<div><img src="media/slider/unser_hof/6.jpg"/></div>
+									<div><img src="media/slider/unser_hof/7.jpg"/></div>
+									<div><img src="media/slider/unser_hof/8.jpg"/></div>
+									<div><img src="media/slider/unser_hof/9.jpg"/></div>
+								</div>
+							</div>
+						</div>
+					</div>	
+					<div class="slider-beschreibung"><h1>Unser Binzenhof</h1></div>
+					<div class="strange">
+						<div class="abstand-oben"></div>
+						<div class="abstand-oben"></div>
+					</div>
 					<section class="main-navigation">
 						<div class="nav-container">
 							<div class="flex-container1">
@@ -162,9 +191,10 @@
 				</main>
 
 				<script src="js/jquery-2.1.1.min.js"></script>
-  
-				<script src="js/main.js"></script>
 
+				<script src="js/main.js"></script>
+				<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+				<script type="text/javascript" src="slick/slick.min.js"></script>
 
 
 
