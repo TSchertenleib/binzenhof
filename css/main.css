@@ -1077,9 +1077,8 @@ figure.effect-ming:hover img {
 
 .slider {
 
-	/*	padding: 0 10vw ;*/
-	width: 80%;
-	margin: 0 0vw ;
+    padding: 0 0vw 0 10vw;
+    width: 90%;
 }
 
 	.active {
