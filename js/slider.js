@@ -15,10 +15,11 @@ $(document).ready(function ()   {
             sliderId = $this.attr("data-sliderId"),
             $targetEl = $("#" + sliderId);
 
+
         $this.on("click", function() {
-            // $title.removeClass("selected");
-            // $this.addClass("selected");
+            // $(window).trigger('resize');
             $siteSlider.removeClass("is-active");
+            // $(window).trigger('resize');
             $targetEl.addClass("is-active");
             console.log("this: "+ $this,"sliderId "+ sliderId);
         });
