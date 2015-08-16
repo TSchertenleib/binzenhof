@@ -112,34 +112,34 @@ $('.button').hover(function() {
 
 
 
-    // scroll to position
-    $('.button').click(function() {
-      $('.main-navigation').scrollView();
-    });
+// scroll to position
+$('.button').click(function() {
+  $('.main-navigation').scrollView();
+});
 
 
 
-    // hamburger
+// hamburger
 
-    (function() {
+(function() {
 
-      "use strict";
+  "use strict";
 
-      var toggles = document.querySelectorAll(".c-hamburger");
+  var toggles = document.querySelectorAll(".c-hamburger");
 
-      for (var i = toggles.length - 1; i >= 0; i--) {
-        var toggle = toggles[i];
-        toggleHandler(toggle);
-      };
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
 
-      function toggleHandler(toggle) {
-        toggle.addEventListener( "click", function(e) {
-          e.preventDefault();
-          
-          if  (this.classList.contains("is-active") === true) {
-            this.classList.remove("is-active");
-            $('.unterliste2').css("display", "none");
-            $('.unterliste2').animate({ opacity: 0 }, 0);
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+
+      if  (this.classList.contains("is-active") === true) {
+        this.classList.remove("is-active");
+        $('.unterliste2').css("display", "none");
+        $('.unterliste2').animate({ opacity: 0 }, 0);
             // $('.unterliste2').hide();
           }else{
             this.classList.add("is-active");
@@ -150,27 +150,27 @@ $('.button').hover(function() {
 
         });
 
-      }
+  }
 
-    })();
-
-
+})();
 
 
 
 
-  
 
 
 
-    // google maps intergration
 
-    function initialize() {
-      var mapCanvas = document.getElementById('map-canvas');
-      var mapOptions = {
-        center: new google.maps.LatLng(47.378237, 8.0470636),
-        zoom: 18,
-        mapTypeId: google.maps.MapTypeId.ROADMAP 
+
+
+// google maps intergration
+
+function initialize() {
+  var mapCanvas = document.getElementById('map-canvas');
+  var mapOptions = {
+    center: new google.maps.LatLng(47.378237, 8.0470636),
+    zoom: 18,
+    mapTypeId: google.maps.MapTypeId.ROADMAP 
           //ROADMAP HYBRID TERRAIN SATELLITE
         }
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -186,7 +186,7 @@ $('.button').hover(function() {
 
      myoverlay.draw = function () {
        this.getPanes().markerLayer.id='markerLayer';
-     };
+     }; 
      // myoverlay.setMap(map);
 
    }

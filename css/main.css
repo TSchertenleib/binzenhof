@@ -712,6 +712,7 @@ textarea {
 /* Zitat --------------------------------- */
 
 .zitat {
+	margin: 4vw 0vw;
 	padding: 2vw 10vw 0.3vw;
 	text-align: center;
 	color: #9E9E9E;
@@ -1573,10 +1574,7 @@ figure.effect-ming:hover img {
 		width: 100%;
 	}
 
-	.text {
-		width: 100%;
-		padding: 0vw 1vw;
-	}
+
 
 	.uebertext-titel h1 {
 		padding: 3vw 1vw;	
@@ -1732,7 +1730,7 @@ figure.effect-ming:hover img {
 		font-weight: 600;
 		font-size: 7vw;
 		position:relative; 
-		margin-top: 10%;
+		margin-top: 4%;
 		opacity: 1;
 	}
 
