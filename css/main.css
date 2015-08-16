@@ -386,6 +386,8 @@ ul {
 	display:flex;
 }
 
+
+
 /* Über uns Portraits Sektion --------------------------------- */
 
 
@@ -440,9 +442,10 @@ ul {
 	color: #9E9E9E;
 	text-align: center;
 
-	position:absolute; 
+	top:11vw;
+
+	position:relative; 
 	width: 100%;
-	margin-top: 25%;
 	transition: all 0.8s ease-in-out;
 	-moz-transition: all 0.8s ease-in-out;
 	-webkit-transition: all 0.8s ease-in-out;
@@ -451,6 +454,16 @@ ul {
 
 	visibility: visible;
 	opacity: 0;
+}
+
+.angaben-container {
+	width: 50%;
+	display:block;
+}
+
+.angaben-container:nth-child(1) {
+/*	padding-top: 9vw;
+	display:block;*/
 }
 
 .angaben-container p {
@@ -459,16 +472,20 @@ ul {
 	-webkit-transform: translate3d(0,0,0);
 	-o-transform: translate3d(0,0,0);
 	-ms-transform: translate3d(0,0,0);
-	display: block;
-	width: 100%;
-	clear: both;
+
+	top:9vw;
+
+	word-wrap: break-word;
+	float: left;
 	text-align: center;
 	font-size: 1.1vw;
-	line-height: 2vw;
+	
+	line-height: 0vw;
 
-	position:absolute; 
+	position:relative; 
+
 	width: 100%;
-	margin-top: 30%;
+
 	transition: all 0.8s ease-in-out;
 	-moz-transition: all 0.8s ease-in-out;
 	-webkit-transition: all 0.8s ease-in-out;
@@ -477,6 +494,8 @@ ul {
 	visibility: visible;
 	opacity: 0;
 }
+
+
 
 /* Unsere Tiere Slider Sektion -> grau improvisiert --------------------------------- */
 
@@ -682,6 +701,12 @@ textarea {
 	color: white;
 	background-color: #4A89DC;
 	border-radius: 3px;
+}
+
+.mail {
+	text-decoration:none;
+	font-weight: 600;
+	color: black;
 }
 
 /* Zitat --------------------------------- */
@@ -1027,15 +1052,6 @@ figure.effect-ming:hover img {
 ----------------------------------------------------------*/
 
 
-/*.slider-beschreibung h3 {
-	padding-bottom: 1vw;
-	padding-left: 10vw;
-	width: 100%;
-	font-weight: 400;
-	font-size: 2.6vw;
-	line-height: 2.8vw;
-	color: #9E9E9E;
-}*/
 
 .tiere-container {
 
@@ -1076,17 +1092,16 @@ figure.effect-ming:hover img {
 
 
 .slider {
-
     padding: 0 0vw 0 10vw;
     width: 90%;
 }
 
-	.active {
-		display: block;
-	}
+.active {
+	display: block;
+}
+
 
 .tiere-ueberflex {
-	/*	padding: 0 10vw ;*/
 	width: 80%;
 	margin: 0 10vw ;
 }
@@ -1094,22 +1109,81 @@ figure.effect-ming:hover img {
 
 
 .thumb img {
-	float: left;
+
 	position: relative;
 	text-align: center;
 	cursor: default;
-	width: 100%;
+
 
 }
 
 .thumb {
-	float: left;
+
 	position: relative;
 	text-align: center;
 	cursor: pointer;
-	width: 12.5%;
+	width: 100%;
 	border-left: 1px solid rgba(150, 150, 150, 0.2);
 }
+
+
+/* thumb-events */
+
+.thumb-events img {
+
+	position: relative;
+	text-align: center;
+	cursor: default;
+
+}
+
+.thumb-events {
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	border-left: 1px solid rgba(150, 150, 150, 0.2);
+}
+
+.events-container {
+	margin-bottom: 0;
+}
+
+.events-ueberflex {
+	width: 80%;
+	margin: 0 10vw ;
+}
+
+.events-flex {
+
+}
+
+.slider-titel-events {
+	top:50%;
+	font-size: 2vw;
+
+	display: block;
+
+
+	margin: 0vw;
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding-top: 1.5vw;
+	padding-bottom: auto;
+	text-align: center;
+	color: white;
+	font-weight: 200;
+
+
+	transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+}
+/* thumb-events end */
 
 
 .mask2:hover {
@@ -1119,15 +1193,23 @@ figure.effect-ming:hover img {
 
 
 .slider-titel {
+	top:50%;
+	font-size: 2vw;
+
+	display: block;
+
+
+	margin: 0vw;
+
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	padding-top: auto;
+	padding-top: 1.5vw;
 	padding-bottom: auto;
 	text-align: center;
 	color: white;
 	font-weight: 200;
-	font-size: 1.7vw;
+
 
 	transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -1137,11 +1219,6 @@ figure.effect-ming:hover img {
 }
 
 
-.mail {
-	text-decoration:none;
-	font-weight: 600;
-	color: black;
-}
 
 
 .effect2 .mask2 {
@@ -1179,6 +1256,18 @@ figure.effect-ming:hover img {
 	-o-transform: scale(0.98);
 	-ms-transform: scale(0.98);
 }
+
+
+.slider-beschreibung h1 {
+	padding-left: 10vw;
+	padding-bottom: 1vw;
+	width: 100%;
+	font-weight: 400;
+	font-size: 2.6vw;
+	line-height: 2.8vw;
+	color: #9E9E9E;
+}
+
 
 /*---------------------------------------------------------
 --------------------- Media Queries -----------------------
@@ -1614,26 +1703,29 @@ figure.effect-ming:hover img {
 	}
 
 	.portraits-container {
-
-		flex-direction: column;		
-		-webkit-flex-direction: column;	
+	background: #EEEEEE;
+		flex-direction: row;		
+		-webkit-flex-direction: row;
+		margin:1vw 0;	
 	}
 
-	.img-container{
-		flex-direction: column;		
-		-webkit-flex-direction: column;	
+	.img-container img{
+		margin-top: 13.5vw;
+		flex-direction: row;		
+		-webkit-flex-direction: row;	
 		display: block;
 
 		width: 100%;
 	}
 
 	.angaben-container {
-		flex-direction: column;		
-		-webkit-flex-direction: column;	
+		flex-direction: row;		
+		-webkit-flex-direction: row;	
 		display: block;
 		margin-top: 4px;
 		width: 100%;
 		height: 50vw;
+		background: #EEEEEE;
 	}
 
 	.angaben-container h2 {
@@ -1835,34 +1927,61 @@ figure.effect-ming:hover img {
 
 
 	.thumb {
-		width: 25%;
+		width: 100%;
 	}
 
-
-
-	.tiere-flex img {
-		display: none;
+	.events-ueberflex {
+		position: static;
+		/*	padding: 0 10vw ;*/
+		width: 100%;
+		margin: 0 0vw ;
+		display: felx;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
 	}
 
-	.mask2 {
-		display: none;
+	.thumb-events {
+		width: 100%;
 	}
+
+	.slider-titel-events {
+		left:1%;
+		top:2%;
+		text-align: left;
+		font-size: 4.5vw;
+		position: absolute;
+		display: block;
+		color: white;
+		padding: 1vw;
+		padding-left: 1vw;
+		margin: 0vw;
+		font-weight: 400;
+		line-height: 40px;
+	}
+
+.effect2:hover .mask2 {
+
+	opacity: 1;
+
+	visibility:visible;
+}
+
 
 	.slider-titel {
+		top:20%;
 		font-size: 6vw;
-		top: 0;
-		opacity: 0.7;
-		filter: alpha(opacity=70);
-		position: relative;
+		position: absolute;
 		display: block;
 		color: white;
 		padding: 1vw;
 		margin: 0vw;
-		background-color:  #9E9E9E;
+
 		font-weight: 100;
 		border-bottom: 1px solid white;
 		border-left: 1px solid white;
-/*		border-top: 1px solid white;*/
 	}
 
 	.slider {
@@ -1872,13 +1991,7 @@ figure.effect-ming:hover img {
 		display:-ms-flex;
 		position: relative;
 	}
-	.slick-prev:before,
-	.slick-next:before
-	{
-		top:20%;
-		font-size: 350px;
 
-	}
 
 	.slider-titel {
 		font-size: 5vw;
@@ -1890,9 +2003,22 @@ figure.effect-ming:hover img {
 		display: none;
 	}
 
+
+
 	.aussendiv .abstand-oben {
 		display: none;
 	}
+
+.slider-beschreibung h1 {
+	padding-left: 3vw;
+	padding-bottom: 1vw;
+	width: 100%;
+	font-weight: 400;
+	font-size: 6vw;
+	line-height: 2.8vw;
+	color: #9E9E9E;
+}
+
 
 }
 
@@ -2304,7 +2430,7 @@ figure.effect-ming:hover img {
 
 	/* Über uns Portraits Sektion --------------------------------- */
 
-	.abstand-oben {
+/*	.abstand-oben {
 		height: 18vw;
 		width: 100%;
 	}
@@ -2330,9 +2456,9 @@ figure.effect-ming:hover img {
 		margin-top: 4px;
 		width: 100%;
 		height: 50vw;
-	}
+	}*/
 
-	.angaben-container h2 {
+/*	.angaben-container h2 {
 		font-weight: 600;
 		font-size: 5vw;
 		position:relative; 
@@ -2349,7 +2475,71 @@ figure.effect-ming:hover img {
 		position:relative; 
 		margin-top: 1vw;
 		opacity: 1;
-	}
+	}*/
+
+.angaben-container h2 {
+	transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	font-weight: 400;
+	font-size: 4.4vw;
+	line-height: 2.8vw;
+	color: #9E9E9E;
+	text-align: center;
+
+	top:5vw;
+
+	position:relative; 
+	width: 100%;
+	transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+
+	visibility: visible;
+	opacity: 0;
+}
+
+.angaben-container {
+	width: 50%;
+	display:block;
+}
+
+.angaben-container:nth-child(0) {
+	padding-top: 0vw;
+}
+
+.angaben-container p {
+	transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+
+	top:0vw;
+
+	float: left;
+	text-align: center;
+	font-size: 2.5vw;
+	
+	line-height: 0vw;
+
+	position:relative; 
+
+	width: 100%;
+
+	transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	visibility: visible;
+	opacity: 0;
+}
+
 
 	/* Hoflädeli --------------------------------- */
 
@@ -2496,75 +2686,42 @@ figure.effect-ming:hover img {
 
 
 
-	.slider-container {
-		position: relative;
-		display:-ms-flex;
-		display:-o-flex;
-		display:-moz-flex;
-		display:-webkit-flex;
-		display:-webkit-box;
-		display:-ms-flexbox;
-		display:flex;
 
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-	}
 
-	.tiere-container {
-		position: relative;
-		margin-top:0;
-		display:-ms-flex;
-		display:-o-flex;
-		display:-moz-flex;
-		display:-webkit-flex;
-		display:-webkit-box;
-		display:-ms-flexbox;
-		display:flex;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-	}
 
 	.tiere-ueberflex {
-		position: static;
+
 		/*	padding: 0 10vw ;*/
 		width: 100%;
 		margin: 0 0vw ;
-		display: felx;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
+
 	}
 
 
 
-	.thumb {
-		width: 25%;
-	}
 
 
 
-	.tiere-flex img {
+
+/*	.tiere-flex img {
 		display: none;
-	}
+	}*/
 
-	.mask2 {
+/*	.mask2 {
 		display: none;
-	}
+	}*/
 
 	.slider-titel {
-		top: 0;
+		top: 25%;
 		opacity: 0.7;
-		position: relative;
+		position: absolute;
 		display: block;
 		color: white;
 		padding: 1vw;
 		margin: 0vw;
-		background-color:  #9E9E9E;
-		font-weight: 100;
+
+		font-size: 4vw;
+		font-weight: 300;
 		border-bottom: 1px solid white;
 		border-left: 1px solid white;
 /*		border-top: 1px solid white;*/
@@ -2577,13 +2734,39 @@ figure.effect-ming:hover img {
 		margin: 0 auto;
 		padding: 0 0vw;
 		width: 100%;
-		display:none;
-		position: relative;
+
 	}
 
-	.slider-titel {
-		font-size: 4vw;
-		font-weight: 300;
+	.events-ueberflex {
+		position: static;
+		/*	padding: 0 10vw ;*/
+		width: 100%;
+		margin: 0 0vw ;
+		display: felx;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	.thumb-events {
+		width: 100%;
+	}
+
+	.slider-titel-events {
+		left:1%;
+		top:2%;
+		text-align: left;
+		font-size: 3vw;
+		position: absolute;
+		display: block;
+		color: white;
+		padding: 1vw;
+		padding-left: 1vw;
+		margin: 0vw;
+		font-weight: 200;
+		line-height: 3vw;
 	}
 
 	.active {
@@ -2606,5 +2789,15 @@ figure.effect-ming:hover img {
 	.aussendiv .abstand-oben {
 		display: none;
 	}
+
+	.slider-beschreibung h1 {
+	padding-left: 3vw;
+	padding-bottom: 1vw;
+	width: 100%;
+	font-weight: 400;
+	font-size: 3vw;
+	line-height: 2.8vw;
+	color: #9E9E9E;
+}
 
 }

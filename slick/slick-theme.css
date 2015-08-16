@@ -236,15 +236,18 @@
 .slick-prev:before,
 .slick-next:before
 {
-
-    font-size: 300px;
-
+    top:50% !important;
+    font-size: 250px;
+    line-height: 110px;
 }
+
+
 
 .slick-dots
 {
     display: none;
 }
+
 
 }
 
