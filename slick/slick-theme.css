@@ -26,7 +26,7 @@
 
 
     position: absolute;
-    top: 50%;
+    top: 48%;
 
     display: block;
 
@@ -236,16 +236,16 @@
 .slick-prev:before,
 .slick-next:before
 {
-    top:50% !important;
-    font-size: 250px;
-    line-height: 110px;
+    top:60% !important;
+    font-size: 150px;
+    line-height: 0px;
 }
 
 
 
 .slick-dots
 {
-    display: none;
+/*    display: none;*/
 }
 
 

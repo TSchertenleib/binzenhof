@@ -1574,7 +1574,9 @@ figure.effect-ming:hover img {
 		width: 100%;
 	}
 
-
+	.text {
+		padding: 1vw 1vw;
+	}
 
 	.uebertext-titel h1 {
 		padding: 3vw 1vw;	
@@ -1708,7 +1710,8 @@ figure.effect-ming:hover img {
 	}
 
 	.img-container img{
-		margin-top: 13.5vw;
+		margin-top: 7.5vw;
+
 		flex-direction: row;		
 		-webkit-flex-direction: row;	
 		display: block;
@@ -1721,7 +1724,7 @@ figure.effect-ming:hover img {
 		-webkit-flex-direction: row;	
 		display: block;
 		margin-top: 4px;
-		width: 100%;
+		width: 50%;
 		height: 50vw;
 		background: #EEEEEE;
 	}
@@ -1730,7 +1733,7 @@ figure.effect-ming:hover img {
 		font-weight: 600;
 		font-size: 7vw;
 		position:relative; 
-		margin-top: 4%;
+		margin-top: 6%;
 		opacity: 1;
 	}
 
@@ -1884,6 +1887,8 @@ figure.effect-ming:hover img {
 		display:-webkit-box;
 		display:-ms-flexbox;
 		display:flex;
+		margin: 8vw 0vw;
+
 
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
@@ -1996,10 +2001,7 @@ figure.effect-ming:hover img {
 		font-weight: 400;
 	}
 
-	.slick-dots
-	{
-		display: none;
-	}
+
 
 
 
@@ -2316,6 +2318,10 @@ figure.effect-ming:hover img {
 	.text {
 		width: 100%;
 		padding: 0vw 1vw;
+	}
+
+	.uebertext {
+		margin: 0vw 0vw;
 	}
 
 	.uebertext-titel h1 {

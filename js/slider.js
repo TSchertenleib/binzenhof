@@ -64,13 +64,30 @@ $('.site-slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  // slidesToScroll: 1,
-  arrows: true,
-  // onAfterChange: function (slider) {
-  //   current = $('.site-slider').slickCurrentSlide();
-  //   $('.tiere-ueberflex').slickGoTo(current);
-  // }
+  slidesToScroll: 1,
+  arrows: true
+  // ,
+  // responsive: [
+    
+ 
+  //   {
+  //     breakpoint: 667,
+  //     settings: {
+  //       arrows:false,
+  //       dots: false,
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  //   // You can unslick at a given breakpoint now by adding:
+  //   // settings: "unslick"
+  //   // instead of a settings object
+  // ]
+
+        
 });
+
+
 
 
     // $('.next-button-slick').click(function(){
@@ -90,6 +107,7 @@ $('.tiere-ueberflex').slick({
   focusOnSelect: true,
   arrows: false,
   asNavFor: '.site-slider'
+
 });
 
 
