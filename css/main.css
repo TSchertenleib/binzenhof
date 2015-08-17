@@ -154,8 +154,6 @@ ul {
 /* Start Main --------------------------------- */
 
 
-
-
 .uebertitel {
 	position: absolute;
 	z-index: 100;
@@ -265,7 +263,6 @@ ul {
 	-o-transition:all 0.8s ease-in-out;
 	-ms-transition:all 0.8s ease-in-out;
 	transition:all 0.8s ease-in-out;
-
 }
 
 .inhalt{
@@ -518,6 +515,8 @@ ul {
 	transform: scale(1.03);
 }
 
+
+
 /* Anfragen -> Events & Hoflaedeli --------------------------------- */
 
 
@@ -589,7 +588,7 @@ ul {
 
 .grau-container-kontakt {  
 	position: static;
-	padding: 2vw 0vw 5vw; /*wieso??*/
+	padding: 2vw 0vw 3vw; /*wieso??*/
 	width:100%;
 	height: 100%;
 	background: #EEEEEE;
@@ -604,19 +603,20 @@ ul {
 
 
 
+
 /* Form --------------------------------- */
-
-
 
 .form-style-6{
 	font-size: 1.3vw;
 	width: 60%;
 	float: left;
-/*	margin: 2vw auto;
-*/	padding: 0vw 3vw 0vw 10vw;
-/*	background: #F7F7F7;
-*/	border-radius: 3px;
+	border-radius: 3px;
+	padding: 0;
+	margin: .2vw 2vw;
+}
 
+.form-style-6{
+	font-size: 1.0vw;
 }
 
 .form-style-6 input[type="text"],
@@ -709,6 +709,8 @@ textarea {
 	color: black;
 }
 
+
+
 /* Zitat --------------------------------- */
 
 .zitat {
@@ -734,9 +736,9 @@ textarea {
 	margin-top: 0vw;
 }
 
+
+
 /* Main Navigation --------------------------------- */
-
-
 
 .main-navigation {
 	margin-top: -5px; /* vorübergehend */
@@ -889,9 +891,10 @@ textarea {
 	-ms-transform: scale(0.98);
 }
 
+
+
+
 /* effect unser bauernhof nav --------------------------------- */
-
-
 
 .grid {
 	position: relative;
@@ -979,9 +982,9 @@ textarea {
 	font-size: 78.5%;
 }
 
+
+
 /* Effenct ---------------*/
-
-
 
 figure.effect-ming {
 	background: #030c17;
@@ -1077,7 +1080,6 @@ figure.effect-ming:hover img {
 }
 
 
-
 .site-slider {
 	display: none;
 
@@ -1162,12 +1164,8 @@ figure.effect-ming:hover img {
 .slider-titel-events {
 	top:50%;
 	font-size: 2vw;
-
 	display: block;
-
-
 	margin: 0vw;
-
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -1177,13 +1175,14 @@ figure.effect-ming:hover img {
 	color: white;
 	font-weight: 200;
 
-
 	transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 }
+
+
 /* thumb-events end */
 
 
@@ -1274,6 +1273,190 @@ figure.effect-ming:hover img {
 --------------------- Media Queries -----------------------
 ----------------------------------------------------------*/
 
+/* Desktop 1900 ----------- */
+@media only screen and (min-width: 1900px)  {
+
+	/*navigation*/
+
+	nav a {
+		padding-left: 3.7vw;
+		margin-right: 0vw;
+		font-size: .9vw;
+	}
+
+
+	.unterliste2 {
+		margin-left: 5.5vw;
+	}
+
+
+	.button {
+		font-size: 1.7vw;
+		font-weight:200;
+		padding:1vw 2.5vw;
+}
+
+ 	/*main navigation*/
+
+	.navigation-title {
+		font-weight: 300;
+		font-size: 2.1vw;
+	}
+
+
+	/*unterseiten main*/
+
+	.text {
+		padding: 1.1vw 10vw 0vw;
+	}
+
+	.uebertext-titel h1 {
+		padding-bottom: .6vw;
+		width: 100%;
+		font-weight: 400;
+		font-size: 1.4vw;
+		line-height: 1.6vw;
+		color: #9E9E9E;
+	}
+
+	.uebertext p {
+		padding-bottom: 1vw;
+		font-size: .9vw;
+		line-height: 1.2vw;
+	}
+
+	.kontakt-text>p {
+		padding-bottom: 1vw;
+		font-size: .9vw;
+		line-height: 1.2vw;
+	}
+
+
+	/*untermenu unser bauernhof*/
+
+	.grid figure figcaption {
+
+		font-size: 1.3vw;
+		font-weight: 300;
+	}
+
+	.grid figure h2 {
+		padding-top: 5.3vw;
+		font-weight: 400;
+		font-size: 1.9vw;
+	}
+
+
+	/*zitat*/
+	.zitat h1 {
+		font-weight: 100;
+		font-size: 2.0vw;
+		line-height: 2.0vw;
+	}
+
+	.zitat h6 {
+		font-weight: 200;
+		font-size: 1.0vw;
+		line-height: 1.3vw;
+	}
+
+
+	/*slider*/
+	.slider-beschreibung h1 {
+		font-size: 2vw;
+		font-weight: 200;
+	}
+
+	.thumb-events h3 {
+		font-size: 1.3vw;
+	}
+
+	/*über uns*/
+	.angaben-container p {
+		font-size: 0.9vw;
+		top: 10.5vw; 
+
+	}
+
+	.angaben-container h2 {
+		font-weight: 400;
+		font-size: 1.6vw;
+		line-height: 2.8vw;
+		top: 11.5vw; 
+	}
+
+
+	/*anfrage -> kontakt laedeli*/
+	.anfragen a {
+		font-weight: 400;
+		font-size: 2.0vw;
+		line-height: 2.0vw;
+	}
+
+	.anfragen a:hover {
+		font-weight: 400;
+		font-size: 2.0vw;
+		line-height: 2.0vw;
+	}
+
+	/*laedeli*/
+	.oeffnungszeiten p {
+		font-size: 1vw;
+		line-height: 1.8vw;
+		margin-top: 0vw;
+		margin-bottom: 3vw;
+	}
+
+	/*kontakt*/
+	.form-style-6{
+		font-size: 1.0vw;
+		padding: 0;
+		margin: .2vw 2vw;
+	}
+
+	.form-style-6 input[type="text"],
+	.form-style-6 input[type="date"],
+	.form-style-6 input[type="datetime"],
+	.form-style-6 input[type="email"],
+	.form-style-6 input[type="number"],
+	.form-style-6 input[type="search"],
+	.form-style-6 input[type="time"],
+	.form-style-6 input[type="url"],
+	.form-style-6 textarea,
+	.form-style-6 select {
+		margin-bottom: .7vw;
+		padding: .7vw;
+	}
+
+	.form-style-6 input[type="text"]:focus,
+	.form-style-6 input[type="date"]:focus,
+	.form-style-6 input[type="datetime"]:focus,
+	.form-style-6 input[type="email"]:focus,
+	.form-style-6 input[type="number"]:focus,
+	.form-style-6 input[type="search"]:focus,
+	.form-style-6 input[type="time"]:focus,
+	.form-style-6 input[type="url"]:focus,
+	.form-style-6 textarea:focus,
+	.form-style-6 select:focus{
+		padding: .7vw;
+	}
+
+	.form-style-6 input[type="submit"],
+	.form-style-6 input[type="button"]{
+		padding: .7vw;
+	}
+
+	.grau-container-kontakt {
+		height: 25vw;
+	}
+
+	.adresse {
+		margin-top: 3vw;
+		width: 100%;
+		font-size: 1vw;
+		padding-right: 4vw;
+	}
+}
 
 
 

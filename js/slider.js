@@ -106,7 +106,23 @@ $('.tiere-ueberflex').slick({
   centerMode: true,
   focusOnSelect: true,
   arrows: false,
-  asNavFor: '.site-slider'
+  asNavFor: '.site-slider',
+    responsive: [
+    {
+      breakpoint: 1900,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 667,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+  ]
 
 });
 
@@ -118,7 +134,23 @@ $('.events-ueberflex').slick({
   centerMode: true,
   focusOnSelect: true,
   arrows: false,
-  asNavFor: '.site-slider'
+  asNavFor: '.site-slider',
+    responsive: [
+    {
+      breakpoint: 1900,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 667,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 });
