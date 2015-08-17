@@ -1162,8 +1162,8 @@ figure.effect-ming:hover img {
 }
 
 .slider-titel-events {
-	top:50%;
-	font-size: 2vw;
+	top:30%;
+	font-size: 1.5vw;
 	display: block;
 	margin: 0vw;
 	width: 100%;
@@ -1193,11 +1193,11 @@ figure.effect-ming:hover img {
 
 
 .slider-titel {
-	top:50%;
-	font-size: 2vw;
-
 	display: block;
 
+		top:30%;
+		font-size: 1.5vw;
+		font-weight: 100;
 
 	margin: 0vw;
 
@@ -1365,6 +1365,18 @@ figure.effect-ming:hover img {
 	.slider-beschreibung h1 {
 		font-size: 2vw;
 		font-weight: 200;
+	}
+
+	.slider-titel {
+		top:45%;
+		font-size: 1.5vw;
+		font-weight: 100;
+	}
+
+	.slider-titel-events {
+		top:45%;
+		font-size: 1.5vw;
+		font-weight: 100;
 	}
 
 	.thumb-events h3 {
@@ -2134,9 +2146,8 @@ figure.effect-ming:hover img {
 	}
 
 	.slider-titel-events {
-		left:1%;
-		top:2%;
-		text-align: left;
+		top:25%;
+		text-align: center;
 		font-size: 4.5vw;
 		position: absolute;
 		display: block;
@@ -2157,8 +2168,9 @@ figure.effect-ming:hover img {
 
 
 	.slider-titel {
-		top:20%;
+		top:25%;
 		font-size: 6vw;
+		font-weight: 400;
 		position: absolute;
 		display: block;
 		color: white;
@@ -2170,6 +2182,8 @@ figure.effect-ming:hover img {
 		border-left: 1px solid white;
 	}
 
+
+
 	.slider {
 		margin: 0 auto;
 		padding: 0 0vw;
@@ -2179,10 +2193,7 @@ figure.effect-ming:hover img {
 	}
 
 
-	.slider-titel {
-		font-size: 5vw;
-		font-weight: 400;
-	}
+
 
 
 
@@ -2942,10 +2953,10 @@ figure.effect-ming:hover img {
 	}
 
 	.slider-titel-events {
-		left:1%;
-		top:2%;
-		text-align: left;
-		font-size: 3vw;
+
+		top:45%;
+		text-align: center;
+		font-size: 4vw;
 		position: absolute;
 		display: block;
 		color: white;

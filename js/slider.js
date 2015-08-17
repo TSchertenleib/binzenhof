@@ -65,26 +65,7 @@ $('.site-slider').slick({
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true
-  // ,
-  // responsive: [
-    
- 
-  //   {
-  //     breakpoint: 667,
-  //     settings: {
-  //       arrows:false,
-  //       dots: false,
-  //       slidesToShow: 1,
-  //       slidesToScroll: 1
-  //     }
-  //   }
-  //   // You can unslick at a given breakpoint now by adding:
-  //   // settings: "unslick"
-  //   // instead of a settings object
-  // ]
-
-        
+  arrows: true        
 });
 
 
@@ -100,7 +81,7 @@ $('.site-slider').slick({
 
 
 $('.tiere-ueberflex').slick({
-  slidesToShow: 4,
+  slidesToShow: 6,
   slidesToScroll: 1,
   dots: true,
   centerMode: true,
@@ -108,17 +89,27 @@ $('.tiere-ueberflex').slick({
   arrows: false,
   asNavFor: '.site-slider',
     responsive: [
-    {
-      breakpoint: 1900,
+   {
+      breakpoint: 1400,
       settings: {
-        slidesToShow: 6,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        centerMode: true,
+        slidesToShow: 3,
         slidesToScroll: 1
       }
     },
     {
       breakpoint: 667,
       settings: {
-        slidesToShow: 3,
+        centerMode: true,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     }
@@ -128,25 +119,35 @@ $('.tiere-ueberflex').slick({
 
 
 $('.events-ueberflex').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
+  slidesToShow: 6,
+  slidesToScroll: 0,
   dots: true,
-  centerMode: true,
+  centerMode: false,
   focusOnSelect: true,
   arrows: false,
   asNavFor: '.site-slider',
     responsive: [
     {
-      breakpoint: 1900,
+      breakpoint: 1400,
       settings: {
-        slidesToShow: 6,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        centerMode: true,
+        slidesToShow: 3,
         slidesToScroll: 1
       }
     },
     {
       breakpoint: 667,
       settings: {
-        slidesToShow: 3,
+        centerMode: true,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     }
