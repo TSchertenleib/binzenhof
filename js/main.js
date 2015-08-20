@@ -138,14 +138,23 @@ $('.button').click(function() {
 
       if  (this.classList.contains("is-active") === true) {
         this.classList.remove("is-active");
-        $('.unterliste2').css("display", "none");
-        $('.unterliste2').animate({ opacity: 0 }, 0);
-            // $('.unterliste2').hide();
+        
+                $('.unterliste2').animate(
+            {
+                opacity: 0
+            },
+            {
+                duration: 500,
+                callback: function () {
+                      $('.unterliste2').css("display", "none");
+                }
+           });
+
           }else{
             this.classList.add("is-active");
             $('.unterliste2').css("display", "block");
             $('.unterliste2').animate({ opacity: 1 }, 1);
-            // $('.unterliste2').show();
+
           }
 
         });

@@ -16,7 +16,7 @@ $(document).ready(function ()   {
 
 
     $this.on("click", function() {
-        // $(window).trigger("resize");
+        $(window).trigger("resize");
         // $(window).resize();    
         $siteSlider.removeClass("is-active");
         // $(window).trigger("resize");

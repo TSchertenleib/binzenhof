@@ -80,9 +80,8 @@ header {
 	background: -ms-linear-gradient(top,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-
-
 }
+
 
 #logo{
 	font-family: 'source serif pro';
@@ -93,21 +92,15 @@ header {
 	letter-spacing: 1px;
 	font-weight: 600;
 	text-rendering: geometricPrecision; 
-
 }
 
-#start-navigation{
 
+#start-navigation{
 	width: 43%;
 	float:left;
 	display:block;
-
 }
 
-
-.unterliste1,
-.unterliste2 {
-}
 
 .unterliste2 {
 	float:left;
